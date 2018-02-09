@@ -1,0 +1,41 @@
+  
+<ion-header>
+ <ion-toolbar color="blue">
+  <ion-title>Episode Details</ion-title>
+        <button  class="backbtn" (click)="serials()" float-left>
+            <ion-icon class="customIcon" name="arrow-back"></ion-icon>
+        </button>
+  <!-- <ion-title>Serials Details</ion-title> -->
+   </ion-toolbar>                         
+    </ion-header> 
+
+<ion-content>
+<div *ngFor = "let episo of megadata">
+  <ion-card class="trailer" no-margin>
+
+  <div class="trailerimg no-margin">
+
+ <!--<video width="350" height="200" controls src="{{episo.trailer}}"> Your browser does not support the video tag. </video>-->
+  <video width="100%" controls controlsList="nodownload" src="{{episo.trailer}}" type="video/mp4"></video>
+ </div>
+    
+ <div class="trailerbtn"> 
+
+ <button class="btn" ion-button round (click)="serialssubscribe(episo._id,episo.title,this.srlt,this.srl)" >Watch Episode</button>
+ </div>
+   </ion-card>
+<div class="txt">
+   <h1>{{episo.title}} </h1>
+   <ion-grid>
+       <ion-row>
+           <ion-col col-6>
+   <h2>TV Series</h2>
+           </ion-col>
+</ion-row></ion-grid>
+   <p>{{episo.description}}</p>
+</div>
+</div>
+  
+
+
+</ion-content>

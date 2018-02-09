@@ -1,0 +1,89 @@
+page-serials {
+.header{background-color: red;}
+h1{
+	 
+    font-size: 13px;
+    font-weight: 400;
+    color: #afafaf;
+    border-bottom: 1px solid #afafaf;;
+}
+h1::before, h1::after {
+    display: none;
+}
+.icon{   
+     font-size: 35px;
+line-height:1.5;
+color: #fff;
+}
+.bar-buttons{
+    padding-top: 0px;}
+
+.toolbar-title {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    }
+   .user{color:#fff;
+          width: 90%;
+              margin: auto;
+              display: block;
+              text-align: center;
+               
+  }
+
+.card{    margin: 0;
+   border-radius:0;
+    width: 100%;
+}
+
+
+.serials-pg ion-label {
+
+	margin:0;
+
+}
+
+.serials-pg .item{
+
+	padding: 0;
+}
+.serials-pg .card-md .item-md.item-block .item-inner {
+	padding: 0;
+
+}
+
+
+
+// -----------13/11/2017-------------
+
+img {
+    max-width: 100%;
+    height: 251px;
+}
+
+.serial-imges{
+    position: relative;
+    width: 100%;
+    height: 251px;
+    overflow: hidden;
+}
+
+p{text-align:center;
+     font-size: 14px;
+      font-weight: bold;
+       color:white;
+    }
+    
+/*    -----------12/7/17------------*/
+.srlbtn{
+background-color:#393185;
+width: 96%;
+margin-top: 13px;
+margin-left: 6px;
+border-radius: 3px;
+margin-bottom: 13px;
+}
+}
+
+
+

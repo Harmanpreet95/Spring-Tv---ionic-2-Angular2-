@@ -1,0 +1,378 @@
+page-signup {
+.logo{max-width: 80%;
+border: 0;
+margin: 0px 0 0 31px;}
+.home-bg{
+    background: url("../assets/img/banner3-bg.jpg") ;
+        background-size: cover;
+}
+  
+   .list {
+    margin: 0;
+}
+ .col{
+    padding: 0 5px;
+}
+  .sign_profle {
+    width: 87px;
+    float: none;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #000;
+    border-radius: 80px;
+    height: 87px;
+    margin: 3px auto;
+    display: block;
+}
+
+.sign_profle img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0 auto;
+    height: 100%;
+}
+    .grid{padding: 1px 4px;}
+
+h2{ color:#fff;
+    font-weight: 100;
+    text-align: center;
+        padding-top:0px;
+    font-size: 13px;
+         margin: 0 0 10px 0;
+}
+
+
+p{font-weight: 300;
+    color: #fff;
+    text-align: center;
+    padding: 0px 39px;
+    font-size: 15px; 
+margin:0;
+padding-bottom: 72px;}
+
+
+
+.btnwhyt{
+    opacity:.3;
+    margin: 0;
+    }
+.label{
+    margin: 1px 8px 11px 0;
+}
+.btnblu{margin-top: 11px;
+    height: 45px;
+    font-size: 21px;
+    font-weight: 300;
+    border-radius: 5px; 
+    text-transform: none !important;
+}
+.item{
+        border-radius: 5px;
+}
+h4{    font-size: 13px;
+    color: #c5c4c4;
+   
+    font-weight: 100;
+    margin:0;
+    text-align: center;}
+ion-label .fixed {
+    
+    flex: 0 0 10px;}
+    
+.icon{   border-right: 1px solid #8c7d7d;
+    padding-right: 14px;}
+
+
+.sign{
+    font-weight:800;
+}
+a {   color: #e6e8ec;
+    text-decoration: none;
+}
+.changewrapper{
+    width: 123px;
+    height: 123px;
+    position: relative;
+    margin: 0 auto;
+    margin-top:15px;
+
+   .change-log {
+    width: 100px;
+float: none;
+position: relative;
+height: 100px;
+margin: 0 auto;
+border: 1px solid #fff;
+border-radius: 50%;
+overflow: hidden;
+.camera-icon {
+    width: 100%;
+    float: left;
+    position: absolute;
+    z-index: 9999999;
+    top: 0;
+}
+
+} 
+}
+.log {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;}
+
+.camera-icon ion-icon {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    position: absolute;
+  top: 75px;
+right: 12px;
+background: #251d6d;
+padding: 2px 4px;
+border-radius: 50px;
+}
+
+// #lbl-2 {
+//     color: #393185;
+//     margin-top: 13px;
+// }
+
+// #lbl-3{
+//     color: #393185;
+//     margin-top: 13px;
+// }
+
+// #lbl-4 {
+//     color: #393185;
+// margin-top: 13px;
+// }
+
+// #lbl-5{
+//     color: #393185;
+//     margin-top: 13px;
+// }
+
+.text-input {
+    margin: 1px 0 0 0;
+padding: 0;
+width: calc(100% - 8px - 8px);
+}
+
+.item-input .label-md {
+    color: #393185;
+    margin-top: 12px;
+}
+}
+
+
+
+
+
+ion-icon.tab-button-icon.icon.icon-md.ion-md-cls2-outline{
+    background: url("../assets/img/serials.png") no-repeat;
+        background-size: 66%;
+         background-position: center center;
+             width: 103px;
+    height: 50px;
+} 
+ion-icon.tab-button-icon.icon.icon-md.ion-md-cls2{
+     background: url("../assets/img/serials.png") no-repeat;
+        background-size: 66%;
+         background-position: center center;
+      width: 103px;
+    height: 50px;
+}
+ion-icon.tab-button-icon.icon.icon-md.ion-md-cls3-outline{
+    background: url("../assets/img/movies.png") no-repeat;
+        background-size: 66%;
+         background-position: center center;
+             width: 103px;
+    height: 50px;
+} 
+ion-icon.tab-button-icon.icon.icon-md.ion-md-cls3{
+     background: url("../assets/img/movies.png") no-repeat;
+        background-size: 66%;
+         background-position: center center;
+      width: 103px;
+    height: 50px;
+}
+ion-icon.tab-button-icon.icon.icon-md.ion-md-cls4-outline{
+    background: url("../assets/img/dwnld.png") no-repeat;
+        background-size: 66%;
+         background-position: center center;
+             width: 103px;
+    height: 50px;
+} 
+ion-icon.tab-button-icon.icon.icon-md.ion-md-cls4{
+     background: url("../assets/img/dwnld.png") no-repeat;
+        background-size: 66%;
+         background-position: center center;
+      width: 103px;
+    height: 50px;
+}
+
+ion-icon.tab-button-icon.icon.icon-md.ion-md-cls5-outline{
+    background: url("../assets/img/actrsicn.png") no-repeat;
+        background-size: 60%;
+         background-position: center center;
+             width: 103px;
+    height: 50px;
+} 
+ion-icon.tab-button-icon.icon.icon-md.ion-md-cls5{
+     background: url("../assets/img/actrsicn.png") no-repeat;
+        background-size: 60%;
+         background-position: center center;
+      width: 103px;
+    height: 50px;
+}
+
+ion-icon.tab-button-icon.icon.icon-md.ion-md-cls6-outline{
+    background: url("../assets/img/trailericn.png") no-repeat;
+        background-size: 64%;
+         background-position: center center;
+             width: 103px;
+    height: 50px;
+} 
+ion-icon.tab-button-icon.icon.icon-md.ion-md-cls6{
+     background: url("../assets/img/trailericn.png") no-repeat;
+        background-size: 64%;
+         background-position: center center;
+      width: 103px;
+    height: 50px;
+}
+
+.or{
+    margin: 16px 0 0 52px;
+}
+
+h1 {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 100;
+}
+h1::before,
+h1::after {
+    display: inline-block;
+    content: "";
+    border-top: 1px solid #5d5d5d;
+    width: 84px;
+    margin:4px 2px;
+    
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation: landscape) {
+ 
+    ion-icon.tab-button-icon.icon.icon-md.ion-md-cls2-outline{
+        background-size: 40%;
+    
+} 
+
+ion-icon.tab-button-icon.icon.icon-md.ion-md-cls2{
+       background-size: 40%;
+}
+
+
+ion-icon.tab-button-icon.icon.icon-md.ion-md-cls3-outline{
+
+        background-size: 40%;
+} 
+ion-icon.tab-button-icon.icon.icon-md.ion-md-cls3{
+    
+        background-size: 40%;
+}
+
+
+ion-icon.tab-button-icon.icon.icon-md.ion-md-cls4-outline{
+  
+        background-size: 40%;
+} 
+ion-icon.tab-button-icon.icon.icon-md.ion-md-cls4{
+     
+        background-size: 40%;
+}
+
+
+ion-icon.tab-button-icon.icon.icon-md.ion-md-cls5-outline{
+   
+        background-size: 40%;
+} 
+ion-icon.tab-button-icon.icon.icon-md.ion-md-cls5{
+ 
+        background-size: 40%;
+}
+
+
+    ion-icon.tab-button-icon.icon.icon-md.ion-md-cls6-outline{
+  
+        background-size: 40%;
+    
+} 
+ion-icon.tab-button-icon.icon.icon-md.ion-md-cls6{
+  
+        background-size: 40%;
+}
+}
+
+@media only screen and (min-width:516px) and (max-width:680px) and (orientation: landscape){
+
+    ion-icon.tab-button-icon.icon.icon-md.ion-md-cls2-outline{
+        background-size: 48%;
+    
+} 
+
+ion-icon.tab-button-icon.icon.icon-md.ion-md-cls2{
+       background-size: 48%;
+}
+
+
+ion-icon.tab-button-icon.icon.icon-md.ion-md-cls3-outline{
+
+        background-size: 48%;
+} 
+ion-icon.tab-button-icon.icon.icon-md.ion-md-cls3{
+    
+        background-size: 48%;
+}
+
+
+ion-icon.tab-button-icon.icon.icon-md.ion-md-cls4-outline{
+  
+        background-size: 48%;
+} 
+ion-icon.tab-button-icon.icon.icon-md.ion-md-cls4{
+     
+        background-size: 48%;
+}
+
+
+ion-icon.tab-button-icon.icon.icon-md.ion-md-cls5-outline{
+   
+        background-size: 48%;
+} 
+ion-icon.tab-button-icon.icon.icon-md.ion-md-cls5{
+ 
+        background-size: 48%;
+}
+
+
+    ion-icon.tab-button-icon.icon.icon-md.ion-md-cls6-outline{
+  
+        background-size: 48%;
+    
+} 
+ion-icon.tab-button-icon.icon.icon-md.ion-md-cls6{
+  
+        background-size: 48%;
+}
+}

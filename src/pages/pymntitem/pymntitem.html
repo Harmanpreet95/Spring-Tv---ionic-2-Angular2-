@@ -1,0 +1,46 @@
+<ion-header >
+
+  <ion-navbar class="toolbar">
+<div class="toolbar-background"></div>
+    <ion-title ><h5>Payment Method</h5></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="methods">
+
+<ion-list >
+   <ion-item (click)="braintree()">
+    <ion-avatar item-start>
+      <img src="assets/img/pymntmthd.png"/>
+    </ion-avatar>
+
+    <h2>Visa, American Express or Matercard</h2>
+
+    <p>Pay securely with credit/debit card</p>
+  </ion-item> 
+   <ion-item (click)="payment()">
+    <ion-avatar item-start>
+<!--      <img src="assets/img/pymntmthd.png"/>-->
+<div class="mthd">
+    <img class="pay" src="assets/img/pp258.png"/></div>
+    </ion-avatar>
+
+    <h2>PayPal</h2>
+    <p>Pay securely with PayPal</p>
+  </ion-item>
+      <ion-item (click)="bitcoin()">
+    <ion-avatar item-start>
+<!--      <img src="assets/img/pymntmthd.png"/>-->
+<div class="mthd">
+    <ion-icon color="white" name="logo-bitcoin"></ion-icon></div>
+    </ion-avatar>
+
+    <h2>BitCoin</h2>
+    <p>securely bitcoin</p>
+  </ion-item>
+</ion-list>
+
+</ion-content>
+ 

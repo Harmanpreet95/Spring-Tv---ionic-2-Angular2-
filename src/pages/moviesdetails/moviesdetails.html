@@ -1,0 +1,88 @@
+<ion-header>
+ <ion-toolbar color="blue">
+       <button  class="backbtn" (click)="movies()" float-left>
+            <ion-icon class="customIcon" name="arrow-back"></ion-icon>
+        </button> 
+  <ion-title>Movies Details</ion-title> 
+         <!-- <button  class="backbtn" (click)="movies()" float-left>
+            <ion-icon class="customIcon" name="arrow-back"></ion-icon>
+        </button>  -->
+    <!-- <ion-title>Serials Details</ion-title>   -->
+   </ion-toolbar>                         
+    </ion-header> 
+<ion-content hideBackButton>
+
+  <ion-card class="trailer" no-margin>
+
+  <div class="trailerimg no-margin">
+
+ <!--<video style="min-width:100%; max-width:40%; height:200px" controls src="{{actormovie.trailer}}">    Your browser does not support the video tag.               </video>-->
+   <video width="100%" controls controlsList="nodownload"  src="{{actormovie.trailer}}" type="video/mp4"></video>
+<!-- <button  class="backbtn" (click)="movies()">
+            <ion-icon class="customIcon" name="arrow-back"></ion-icon>
+        </button>-->
+ </div>
+ <!-- <div class="videoicon">
+ <img src="assets/img/videoicon.png"/>
+
+ </div> -->
+
+   </ion-card>
+ <div  class="trailerbtn">
+
+ <button class="btn" ion-button round (click)="subscribe(actormovie._id,actormovie.title)">Watch Movie</button>
+ 
+ </div>
+<div class="txt">
+   <h1>{{actormovie.title}} </h1></div>
+
+    <ion-grid class="mvz-grid">
+     <ion-row>
+       <ion-col col-8 no-padding> 
+  <ion-card class="lu-lst">
+    <ul class="likes">
+    <li><img src="assets/img/like.png" width="22"/></li>
+    <li>{{this.lykval}}</li>
+<!--    <li><img src="assets/img/unlike.png" width="22"/></li>
+    <li>{{this.dlykval}}</li>-->
+    </ul></ion-card>
+        </ion-col>
+  <ion-col col-4 no-padding>
+    <button class="buy-butn" ion-button round (click)="buynow(this.actorid,this.actorname,this.actorthumb)" >Buy now</button>
+  </ion-col></ion-row></ion-grid> 
+  <div class="time"><ion-icon name="time" class="watch" ></ion-icon><h5>{{actormovie.movie_duration}}</h5></div>
+<div>
+   <p>{{actormovie.description}}</p></div>
+<div class="actr">
+<h3>Actors</h3></div>
+
+
+<!-- <ion-slides class="actrslider" *ngFor = "let actorlist of actorsall">
+  <ion-slide>
+    {{actorlist[1].name}}
+  <ion-grid>
+  <ion-row>
+  <ion-col col-4>
+   <img [src]="actorlist[1].image" />
+</ion-col>
+</ion-row>
+</ion-grid>
+</ion-slide>
+</ion-slides> -->
+
+
+ <ion-slides pager class="slides slides-md slides-1" slidesPerView = '3' style=" background: url(assets/images/gradient.png) no-repeat center fixed; 
+              background-size: cover;"  >
+           
+                  <ion-slide  *ngFor = "let actorlist of actorsall">
+                          
+                                <div style="position:relative; overflow:hidden; height:150px; width:92px;">
+                                  <img [src]="actorlist[1].image" />
+                                   <!-- <span>{{actorlist[1].name}}</span>  -->
+                            
+                                    <span class="actr-nm">{{actorlist[1].name}}</span></div>
+                     
+                  </ion-slide>
+                </ion-slides>
+                     
+</ion-content>

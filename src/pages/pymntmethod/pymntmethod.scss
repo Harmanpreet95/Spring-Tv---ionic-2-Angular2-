@@ -1,0 +1,64 @@
+page-pymntmethod {
+.back-button{color:#fff;}
+	.toolbar-background{background-color:#251d6d;}
+     h5{color:#fff;
+           }
+
+.methods {
+	ion-list{ margin: -15px;
+		border-bottom:1px solid #e9e9e9;}
+
+          h5{color:#fff;
+            font-size:18px;
+            font-weight: 500;}
+
+
+img{border-radius: 50%;
+    overflow: hidden;
+    width: 42px;
+    height: 41px;
+   }
+    h2{    margin: 2px 0;
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;}
+  
+    p{    overflow: inherit;
+    font-size: 13px;
+    line-height: normal;
+    text-overflow: inherit;
+    color: #bdb8b8;
+    margin-top: -3px;}}
+
+/*----*12/1/17------*/
+
+.mthd {
+    width: 42px;
+    height: 42px;
+    background-color: #251d6d;
+    border-radius: 100%;
+    position: relative;
+    overflow:hidden;
+}
+    
+    .icon{ 
+    position: absolute;
+    top: 9px;
+    left: 14px;
+    font-size: 24px;
+}
+
+.pay {
+    width: 62% !important;
+    position: absolute;
+    left: 8px;
+}
+
+  .card{ 
+    position: absolute;
+  top: 8px;
+left: 10px;
+    font-size: 25px;
+}
+
+}

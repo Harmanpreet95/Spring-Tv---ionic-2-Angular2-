@@ -1,0 +1,133 @@
+
+ <ion-header no-border class="header">
+  <ion-toolbar color="pink" class="logo">
+  <ion-grid>
+  <ion-row>
+  <ion-col col-2>
+  <button  class="backbtn" (click)="back()">
+            <ion-icon class="customIcon" name="arrow-back"></ion-icon>
+        </button>
+      </ion-col>
+  <ion-col col-10>    
+ <ion-title ><h5>Actor Detail</h5></ion-title>
+</ion-col>
+</ion-row>
+</ion-grid>
+</ion-toolbar>
+</ion-header>
+
+
+<!--  <ion-header >
+  <ion-navbar class="toolbar">
+    
+    <ion-title ><h5>Actors Details</h5></ion-title>
+</ion-navbar>
+  </ion-header>
+
+
+<ion-content> -->
+<!-- <ion-grid class="lftryt">
+<ion-row>
+<ion-col col-1>
+<button><img class="lefry" src="assets/imgs/btnleft.png"></button>
+</ion-col>
+<ion-col col-10>
+<h5>Today, November 03</h5>
+</ion-col>
+<ion-col col-1>
+<button><img class="lefry" src="assets/imgs/btnryt.png"></button>
+</ion-col>
+</ion-row>
+</ion-grid> -->
+<ion-content>
+<div class="prfsnls-prfl">
+<ion-grid class="list">
+<ion-row>
+<ion-col col-4 no-padding>
+<div class="prf-img" >
+<div class="prf1"><img src="{{this.actordetail.image}}"></div>
+
+</div>
+</ion-col>
+<ion-col col-8>
+<div class="hdng">
+  <h2>{{this.actordetail.name}}</h2>
+</div></ion-col>
+<!-- <ion-col col-2 no-padding>
+ <ion-icon class="hrt-icon" name="heart-outline"></ion-icon>
+</ion-col> -->
+</ion-row>
+<ion-row>
+<ion-col col-12 no-padding>
+<div class="about">
+<h1> About me</h1>
+<p>{{this.actordetail.description}}</p>
+</div>
+</ion-col>
+</ion-row>
+</ion-grid>
+</div>
+<ion-grid>
+<ion-row>
+<ion-col col-12 no-padding>
+<div class="actsmovies"> 
+<p class="work">Movies</p>
+</div>
+</ion-col>
+</ion-row>
+</ion-grid>
+<div class="salon-glry" >
+<!-- <div class="photossalon"> -->
+<ion-grid class="gly">
+<ion-row>
+<ion-col col-4 no-padding *ngFor="let actors of actormov" >
+    <div class="glr_cvr">
+<div class="gallery1"  >
+<img (click)="details(actors.movie_id)" src="{{actors.movie_thumb}}">
+</div>
+    </div>
+</ion-col>
+<!-- <ion-col col-4 no-padding>
+<div class="gallery1">
+<img src="assets/img/movie1.png">
+</div>
+</ion-col>
+<ion-col col-4 no-padding >
+<div class="gallery1">
+<img src="assets/img/movie1.png">
+</div>
+</ion-col> -->
+ </ion-row>
+
+<!-- <ion-row>
+<ion-col col-4 no-padding >
+<div class="gallery1">
+<img src="assets/img/movie1.png">
+</div>
+</ion-col>
+<ion-col col-4 no-padding>
+<div class="gallery1">
+<img src="assets/img/movie1.png">
+</div>
+</ion-col>
+<ion-col col-4 no-padding >
+<div class="gallery1">
+<img src="assets/img/movie1.png">
+</div>
+</ion-col>
+</ion-row> --> 
+
+<ion-row>
+<ion-col col-12>
+<div class="btn-blu">
+<button ion-button color="blue"><p>See More</p></button>
+</div>
+</ion-col>
+</ion-row>
+
+</ion-grid>
+
+
+</div>
+
+</ion-content>

@@ -1,0 +1,69 @@
+<ion-header no-border class="header">
+  <ion-toolbar color="blue">
+  <ion-grid>
+  <ion-row>
+   <ion-col col-2>
+ <button  class="backbtn" (click)="backtomovies()" float-left>
+            <ion-icon class="customIcon" name="arrow-back"></ion-icon>
+        </button> </ion-col> 
+    <ion-col col-8>
+    <!-- <ion-title ><h1>Search</h1></ion-title> -->
+  <ion-searchbar placeholder = "Search" [(ngModel)]="myInput" (ionInput)="setFilteredItems()">
+        
+        </ion-searchbar>
+</ion-col>
+<ion-col col-2>
+       <ion-icon name="contact" class="user" (click)="account()"></ion-icon>
+    
+</ion-col></ion-row></ion-grid>
+  </ion-toolbar>
+ 
+</ion-header>
+ 
+  
+
+<ion-content class=" movies-pg">
+
+  <ion-card>
+
+<ion-list *ngIf = "this.errorValue == 0">
+     <button ion-item (click)="moviesdetails(movie._id)" *ngFor="let movie of movies">
+      <img [src]="movie.thumbnail"/>
+    </button> 
+     <!-- <button ion-item (click)="serialsdetails()">
+      <img src="assets/img/serial2.png"/>
+    </button>
+    <button ion-item (click)="serialsdetails()">
+     <img src="assets/img/serial1.png"/>
+    </button>  -->
+  </ion-list>
+    
+ <ion-list *ngIf = "this.errorValue == '2'">
+     <button ion-item (click)="moviesdetails(movie._id)" *ngFor="let movie of movies">
+      <img [src]="movie.thumbnail"/>
+    </button> 
+     <!-- <button ion-item (click)="serialsdetails()">
+      <img src="assets/img/serial2.png"/>
+    </button>
+    <button ion-item (click)="serialsdetails()">
+     <img src="assets/img/serial1.png"/>
+    </button>  -->
+  </ion-list>
+  </ion-card>
+ <!-- <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+  </ion-infinite-scroll> -->
+  {{load}}
+ <button  style="background-color:#393185;width: 100%;margin-top: 20px;" *ngIf="load== 1"(click)="loading()">
+      <p style="text-align:center; color:white;">Load Data</p>
+    </button> 
+
+
+<!--  <div class="fltr_con">
+      <ion-icon class="fltr_pic" (click)="presentModal()" name="ios-funnel"></ion-icon>
+
+  </div>-->
+</ion-content>

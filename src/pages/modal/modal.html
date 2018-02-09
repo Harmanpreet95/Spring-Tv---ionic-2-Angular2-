@@ -1,0 +1,86 @@
+<!--
+  Generated template for the SerialsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+
+ <!-- <ion-header no-border class="header">
+  <ion-toolbar color="blue">
+    <button ion-button menuToggle left>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title ><h1>Search</h1></ion-title>
+    <button ion-button menuToggle right>
+       <ion-icon name="search"></ion-icon>
+    </button>
+
+  </ion-toolbar>
+ 
+</ion-header> -->
+ 
+
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+          <button (click)="bktomovies()" class="backbtn">
+     <ion-icon name="close"></ion-icon>
+      </button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+   <!--  <ion-item-group>
+        <ion-item-divider color="light">Movies<span class="clse_mdl"><ion-icon  (click)="bck_clse()" name="close"></ion-icon></span></ion-item-divider>
+        <ion-item>Title bar </ion-item>
+        <ion-item>Action </ion-item>
+        <ion-item>Comedy </ion-item>
+        <ion-item>Love </ion-item>
+        <ion-item>Epic </ion-item>
+        <ion-item>Family </ion-item>
+      </ion-item-group>
+
+      <ion-item-group>
+          <ion-item-divider color="light">African Movies</ion-item-divider>
+          <ion-item>Title bar </ion-item>
+          <ion-item>Nollywood movie </ion-item>
+          <ion-item>Gollywood Ghanaian </ion-item>
+          <ion-item>Sollywood south Africa  </ion-item>
+          <ion-item>Gamwood Gambia  </ion-item>
+          <ion-item>Camwood cameraoon  </ion-item>
+          <ion-item>Etc</ion-item>
+        </ion-item-group>
+
+        <ion-item-group>
+            <ion-item-divider color="light">Native movies </ion-item-divider>
+            <ion-item>Ibo movie </ion-item>
+            <ion-item>Yourba movies </ion-item>
+            <ion-item>Hausa </ion-item>
+            <ion-item>Benin </ion-item>
+            <ion-item>Etc</ion-item>
+          </ion-item-group> -->
+<!-- 
+ <button (click)="upldphoto()" class="backbtn">
+     <ion-icon name="close"></ion-icon>
+      </button> -->
+      <ion-item-group>
+      
+        <ion-item><h3>Filter by Category</h3></ion-item>
+        <div *ngFor="let listt of list">
+        <ion-item (click)="moviecat(listt._id)">{{listt.category}} </ion-item></div>
+     
+      </ion-item-group>
+
+
+            <ion-item-group>
+      
+        <ion-item><h3>Filter by Subcategory</h3></ion-item>
+        <div *ngFor="let listedd of listed">
+        <ion-item (click)="moviesubcat(listedd._id)">{{listedd.subcategory}} </ion-item></div>
+     
+      </ion-item-group>
+          <!-- <accordion></accordion> -->
+       
+</ion-content>

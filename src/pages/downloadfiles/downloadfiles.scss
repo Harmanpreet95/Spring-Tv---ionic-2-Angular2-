@@ -1,0 +1,90 @@
+page-downloadfiles {
+
+h1{
+     
+    font-size: 13px;
+    font-weight: 400;
+    color: #afafaf;
+    border-bottom: 1px solid #afafaf;;
+}
+h1::before, h1::after {
+    display: none;
+}
+.toolbar-title {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    }
+
+   .user {
+color:#fff;
+  }
+.icon{   
+ font-size: 35px;
+line-height:1.5;
+}
+.bar-buttons{
+    padding-top: 0px;
+}
+.card{   
+     margin: 0px;
+    border-radius: 2px;
+    width: calc(106% - 19px);
+}
+h2 {
+    text-align: center;
+   
+    font-size: 18px;
+    color: #777070;
+  font-weight:400;
+    padding: 8px;
+    margin-top: 112px;
+    margin-bottom: 54px;
+}
+.card p{       margin: -39px 0 7px 54px;
+    font-size: 15px;
+    font-weight: 400;
+}
+//     .card img{
+//     width:100%;
+//     height: 100%;
+// }
+    div{
+    padding:1px;
+}
+
+    .nm{
+    font-size: 15px;
+    color: #635c5c;
+}
+
+// ----30/10/17-----
+.button{
+    background-color: transparent;
+    -webkit-box-shadow:none;
+    box-shadow: none;
+}
+button.button.button-md.button-default.button-default-md{
+    background-color:transparent;
+}
+// -----11/13/2017-------
+.card-content-md {
+    border-bottom: 2px solid #9a96c3;
+}
+
+.dwnld-bck {
+   width: 36px;
+   border: 1px solid aliceblue;
+   height: 36px;
+   border-radius: 100%;
+   position: relative;
+   overflow: hidden;
+}
+
+img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+    }

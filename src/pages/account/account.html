@@ -1,0 +1,48 @@
+<ion-header class="ion-pg" >
+ 
+  <ion-navbar class="toolbar">
+     <button  class="backbtn mves_bck" (click)="movies_lst()">
+            <ion-icon class="customIcon" name="arrow-back"></ion-icon>
+        </button>
+<div class="toolbar-background"></div> 
+   <ion-title ><h5 style="margin-top:0px;">My Account</h5></ion-title>
+  
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="home-bg">
+<ion-grid>
+  <ion-row>
+    <ion-col col-12>
+<ion-list >
+   <ion-item (click)="movtoacc()">
+    <ion-avatar item-start>
+      <img src="assets/img/account.png"/>
+    </ion-avatar>
+
+    <h2>My Account</h2>
+    <p *ngIf="this.userphone!= null" >Mobile: {{this.userphone}}</p>
+  </ion-item>
+</ion-list>
+    </ion-col>
+  </ion-row>
+<!-- <ion-grid> -->
+  <ion-row>
+    <ion-col col-12 no-padding>
+      <h6 (click)="aboutus()">About Us</h6>
+    </ion-col>
+  </ion-row>
+   <ion-row>
+    <ion-col col-12 no-padding>
+      <h6 (click)="pricypolicy()">Privacy Policy</h6>
+    </ion-col>
+  </ion-row>
+   <ion-row>
+    <ion-col col-12 no-padding>
+      <h6 (click)="termsandcndtn()">Terms and Conditions</h6>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+<button ion-button block color="blue" class="btn" (click)="logut()"><h4>Logout</h4></button>
+</ion-content>

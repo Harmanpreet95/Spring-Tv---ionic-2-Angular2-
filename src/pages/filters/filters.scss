@@ -1,0 +1,88 @@
+page-filters {
+.header{background-color: red;}
+h1{
+     
+    font-size: 13px;
+    font-weight: 400;
+    color: #afafaf;
+    border-bottom: 1px solid #afafaf;
+}
+h1::before, h1::after {
+    display: none;
+}
+.bar-buttons{
+    padding-top: 0px;}
+
+.customIcon{
+    font-size:30px !important;
+}
+.icon{  
+/*    font-size: 35px;*/
+    font-size: 35px;
+line-height:1.5;
+}
+.toolbar-title {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    }
+   .user{color:#fff;
+  }
+.card{    margin: 0;
+   border-radius:0;
+    width: 100%;
+}
+.marvies-pg .list{margin:0;}
+.movies-pg ion-label {
+
+	margin:0;
+	padding:0;
+
+}
+
+.movies-pg .item{
+
+	padding: 0;
+	margin: 0;
+}
+.movies-pg .card-md .item-md.item-block .item-inner {
+	padding: 0;
+
+}
+
+.fltr_con {
+    width: 30px;
+    float: left;
+    background: #6c6666;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.fltr_pic {
+    color: #fff;
+    text-align: center;
+    line-height: 36px;
+    padding-left: 4px;
+    font-size: 24px;
+}
+
+button{
+    background-color: transparent;
+}
+
+.backbtn {
+    color: #fff;
+}
+
+//  .label.label-md {
+//     margin: 13px 0 0px 0 !important;
+// }
+
+// h3{
+//  background-color: #393185 !important;
+// padding: 10px 0;
+// }
+}

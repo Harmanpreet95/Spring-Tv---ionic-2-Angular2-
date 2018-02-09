@@ -1,0 +1,40 @@
+page-modal {
+    .item-md-light, .item-divider-md-light {
+        color: #fff;
+        background-color: #251d6d;
+    }
+
+    .clse_mdl {
+        width: auto;
+        position: fixed;
+        right: 27px;
+    }
+
+ .label.label-md {
+    margin: 13px 0 0px 0 !important;
+}
+
+h3{
+ background-color: #393185 !important;
+padding: 10px 0;
+color: #fff;
+text-align: center;
+}
+
+// .close.icon {
+//     position: absolute;
+//     right: 19px;
+//     font-size: 20px;
+// }
+
+.backbtn {
+    background-color: transparent;
+    color: #000;
+    position: absolute;
+    right: 16px;
+    font-size: 18px;
+}
+ .grid{
+     padding: 12px 0;
+ }
+}

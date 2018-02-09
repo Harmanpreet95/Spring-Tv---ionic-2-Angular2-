@@ -1,0 +1,284 @@
+page-moviesdetails {
+
+    .toolbar-title{
+    text-align: left;
+    margin-left: 52px;
+}
+
+.button{
+    overflow: hidden;
+    height: 47px;
+    padding: 0 30px;
+    font-size: 17px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #0e086f;
+    margin-left: 20px;}
+   
+ 
+.card-ios { width: 100% }
+   h1{    font-size: 15px;
+        // margin-left: 17px;
+         color:#121111; 
+        // margin-top: 12px;
+        font-weight: bold;
+       margin: 5px auto;
+}
+   
+h2 { 
+    margin-top: -0.7rem;
+    font-size: 14px;
+    color: #8e8e8e;
+    margin-right: 226px;
+}
+
+    p{           
+    font-size: 15px;
+    text-align: justify;
+    padding: 13px;
+    // margin-bottom: 14px;
+    font-weight: normal;
+   }
+
+h3{
+    font-size: 15px;
+    color: #000;
+    font-weight: 900;
+    padding: 11px;
+    border-top: 1px solid #a794c0;
+    border-bottom: 1px solid #e3dcef;
+}
+
+/*.trailerimg {  position: absolute;  height: 100%;  min-height: 250px; top: 6px; left: 0px; right: 0; height: 200px;}*/
+
+div {
+    position: relative;
+  }
+
+  .card-title {
+    position: absolute;
+    top: 71%;
+    font-size: 13px;
+    width: 100%;
+    font-weight: 400;
+    color: #fff;
+    text-align:left;
+    padding-left:10px;
+  }
+
+.videoicon{
+    width: 57px;
+    padding-top: 48px;
+    float: none;
+    margin: 0 auto;
+    display: table;}
+
+div {
+    position: relative;
+    text-align: center;
+  }
+
+  .card-title h6{
+    margin: 0 0 2px -17px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #f5f2f2;
+  }
+
+ .card-title h4 {
+    margin: 7px 0;
+    font-size: 12px;
+    font-weight: 100;
+    color: #fff;
+    margin-right: 81px;
+}
+
+  ul.likes {
+    list-style-type: none;
+    font-size: 1.0em;    
+    width: 100%;
+    color: #fff;
+     margin: 0;
+    padding-left: 14px;
+
+  }
+
+//    ul.likes li{
+  	
+//     float: left;
+//     padding: 0 4px;
+//     font-size: 25px;
+//     color: #fff;
+//      list-style-type: none;
+//      display: inline-block;
+  
+   
+//   }
+ul.likes li {
+    float: left;
+    padding: 0;
+    width: 14%;
+    font-size: 17px;
+    color: #c7bdbd;
+    list-style-type: none;
+    display: inline-block;
+    line-height: 24px;
+    margin-right: 4px;
+}
+.lu-lst{box-shadow: none;}
+
+ul.likes li:last-child{
+    color: #c7bdbd;
+    font-size: 17px;
+    height: 38px;
+ }
+
+    .ionicn { 
+    display: inline-block;
+    font-size: 21px;
+    line-height: -10px;
+    padding: 8px 6px;
+}
+
+     .watch {
+            font-size: 20px;
+    color: #fb0606;
+   width: 100%;
+   float: left;
+   margin-left:18px;
+   display:inline-block;
+       }
+
+       h5{
+           font-size:16px;
+           float: left;
+    margin-top: -20px;
+    margin-left: 44px;
+    display: inline-block;
+    margin-bottom: 13px;
+    width: 100%     
+}
+ 
+    button.backbtn {
+    background-color: transparent;
+    color: #fff;
+   float:left;
+    font-size: 20px;
+    margin-top: 0;
+}
+// ion-slides.actrslider{
+//   height: 25%;
+// }
+ion-slides {
+    display: block;
+    width: 100%;
+    height: 200px;
+}
+// -----30/10/17-----
+.toolbar-title.toolbar-title-md {
+    margin-left: 22px;
+}
+/*.scroll-content{    margin-top: 45px !important;    margin-left: 0;}*/
+
+  .trailerbtn{
+    margin-top: -8px;
+    margin-left: -6px;
+}
+
+.swiper-wrapper {  
+      height: 150px;
+    position: relative;
+    overflow: hidden;
+    margin-left: 12px;
+}
+
+.swiper-slide img { 
+    height: 100px !important;
+    width: 100%;
+}
+
+.txt {
+    margin: 0 auto;
+    display: table;
+    padding-top: 0;
+}
+
+span{
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+    margin-left: 4px;
+}
+
+// ------15/11/2017-------
+
+.actr-nm {
+    position: absolute;
+    left: 9px;
+}
+
+// --------20/11/17-------
+ .buy-butn{
+    font-size: 10px;
+    padding: 0 13px;
+    height: 37px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.button-inner {
+    padding-right: 5px;
+}
+
+/*----12/7/17---------*/
+
+.time {
+    text-align: left;
+}
+
+
+
+/*---------12/12/17-------------*/
+.trailer.card {
+    width: 100%;
+    box-shadow: none;
+}
+}
+
+
+
+/*@media only screen and (min-width:768px) and (max-width:1024px) and (orientation: landscape){
+//  div {
+//     position: relative;
+//     text-align: center;
+// }
+
+h1::before, h1::after {
+ 
+    width: 324px !important;
+
+}
+
+video{
+    width: 100%;
+    height: auto !important;
+}
+
+ .trailerbtn {
+    margin-top: -12px;
+    margin-right: 11px;
+    position: absolute;
+    bottom: 66px;
+    left: 37%;
+}
+
+ .trailer {
+
+    height: 500px !important;
+}
+
+h1 {
+    margin-top: 43px !important;
+}
+}*/

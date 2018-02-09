@@ -1,0 +1,144 @@
+<ion-header>
+
+</ion-header>
+<ion-content padding class="home-bg">
+ 
+<div class="logo">
+<img  src="assets/img/logo.png"/>
+</div>
+
+
+   <form  #signup_Form="ngForm" >
+     <!-- <div *ngIf="this.bit== 0" class="sign_profle">
+<img (click)="openActionSheet()" src="assets/img/no-user-image.gif"/> 
+</div> -->
+<div class="changewrapper"> 
+<div class="change-log">
+ 
+<img *ngIf="this.prfimage == '' || this.prfimage == undefined"  class="log" src="assets/img/no-user-image.gif"/>
+<img *ngIf="this.prfimage != ''" class="log" [src]="this.prfimage"/>
+</div>
+ <div class="camera-icon"><ion-icon  (click)="openActionSheet();" name="camera"></ion-icon></div>
+
+ 
+</div>
+
+
+<div *ngIf="this.bit!= 0 " class="sign_profle">
+<img [src]="this.prfimage"/> 
+</div>
+<div style="margin-top:15px;"> 
+  
+<!-- <a (click)="accessGallery()"><h2>Change photo</h2></a> -->
+ 
+    <ion-list>
+ <ion-grid>
+  <ion-row>
+    <ion-col col-12>
+     
+<!-- <ion-list> -->
+
+  <ion-item class="btnwhyt">
+    <ion-label><ion-icon name="person" ></ion-icon></ion-label>
+
+    <ion-input type="text" placeholder="Username"  pattern="[a-zA-Z ]+" [(ngModel)]="data.username" name="username" type="text"  id="username" #username="ngModel" required></ion-input> 	    
+  </ion-item>
+  <ion-label  class="alert alert-danger" color="danger">
+    <div *ngIf="username.errors && (username.dirty || username.touched)">
+       <div [hidden]="!username.errors.required" >
+         Field is required
+        </div>
+         <div [hidden]="!username.errors.pattern">
+            Only alphabets are allowed
+            </div>
+    </div>
+    </ion-label>
+  <!-- </ion-list> -->
+  </ion-col>
+  </ion-row>
+<ion-row>
+<ion-col col-12>
+<!-- <ion-list> -->
+  <ion-item class="btnwhyt">
+    <ion-label ><ion-icon name="lock" ></ion-icon></ion-label>
+     <ion-input type="password" placeholder="Password" [(ngModel)]="data.password" name="password" type="password"  id="password" minlength="6" required   #password="ngModel"></ion-input>
+  </ion-item>
+<ion-label class="alert alert-danger" color="danger">
+        <div *ngIf="password.errors && (password.dirty || password.touched)">
+          <div [hidden]="!password.errors.required" >
+            Password is required
+            </div>
+        </div>
+    <div *ngIf="password.errors && (password.dirty || password.touched)" >
+       <div [hidden]="!password.errors.minlength" >
+        <h6 style = "font-size : 12px;" > Password Minlength 6 Character </h6>
+        </div>
+    </div>
+    </ion-label>
+<!-- </ion-list> -->
+    </ion-col>
+  </ion-row>
+  <ion-row>
+<ion-col col-12>
+<!-- <ion-list> -->
+  <ion-item class="btnwhyt">
+<ion-label ><ion-icon name="mail" ></ion-icon></ion-label>
+    <ion-input type="email" [(ngModel)]="data.email" name="email" placeholder="Email Address"   #email='ngModel' required pattern='^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$'></ion-input>
+     
+  </ion-item>
+ <ion-label  class="alert alert-danger" color="danger">
+       <div *ngIf="email.errors && (email.dirty || email.touched)" >
+         <div [hidden]="!email.errors.required" >
+           Email is required
+          </div>
+          <div [hidden]="!email.errors.pattern" >
+           In-valid email
+          </div>
+       </div>
+      </ion-label>
+<!-- </ion-list> -->
+    </ion-col>
+  </ion-row>
+  <ion-row>
+<ion-col col-12>
+<!-- <ion-list> -->
+  <ion-item class="btnwhyt">
+     <ion-label class="label"> <ion-icon name="call" class="icon"></ion-icon></ion-label>
+    <ion-input type="tel" [(ngModel)]="data.phone" name="phone" placeholder="Mobile Number"   #phone='ngModel'required pattern='[0-9]+' maxlength="15" minlength="10"></ion-input>
+  </ion-item>
+   <ion-label class="alert alert-danger" color="danger">
+  
+         <div *ngIf="phone.errors && (phone.dirty || phone.touched)">
+         <div [hidden]="!phone.errors.required" >
+           Field is required
+          </div>
+          <div [hidden]="!phone.errors.pattern" >
+           Invalid Format
+          </div>
+           <div [hidden]="!phone.errors.maxlength" >
+           Maximum 15 number
+          </div>
+      </div>
+      </ion-label>
+<!-- </ion-list> -->
+    </ion-col>
+  </ion-row>
+   <ion-row>
+    <ion-col col-12>
+
+   <button ion-button full color="blue" class="btnblu"(click)="signup_form(signup_Form)" [disabled]="!signup_Form.form.valid">Sign Up</button>
+
+    </ion-col>
+  </ion-row>
+</ion-grid>
+    </ion-list>
+  </div>
+   <h4>Already have an Account ?<span class="sign" (click)="signin()">Sign In </span></h4>
+ </form>
+   <div class="or">
+<h1>or</h1> 
+ </div>
+   <button ion-button full color="blue" class="btnblu"(click)="facebook();">Sign Up with Facebook</button>
+
+ 
+</ion-content>

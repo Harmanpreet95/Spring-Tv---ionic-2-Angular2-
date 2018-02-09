@@ -1,0 +1,85 @@
+
+
+<!--  <ion-header >
+<ion-toolbar>
+<ion-grid>
+  <ion-row>
+  <ion-col col-2>
+  <button (click)="menubck()" class="backbtn" float-left>
+            <ion-icon class="customIcon" name="arrow-back"></ion-icon>
+      </button>
+      </ion-col>
+  <ion-col col-10>    
+    <ion-title ><h5>Actors Gallery</h5></ion-title>
+</ion-col>
+</ion-row>
+</ion-grid>
+</ion-toolbar>
+  </ion-header> -->
+
+<!--   <ion-navbar class="toolbar">
+<div class="toolbar-background"></div> 
+   <ion-title ><h5>Me</h5></ion-title>
+  
+  </ion-navbar> -->
+
+  <ion-header no-border class="header">
+  <ion-toolbar color="blue">
+  <ion-grid>
+  <ion-row>
+  <!-- <ion-col col-2>
+    <ion-icon name="search"></ion-icon>
+    </ion-col> -->
+    <ion-col col-10>
+    <!-- <ion-title ><h1>Search</h1></ion-title> -->
+  <ion-searchbar placeholder = "Search" [(ngModel)]="myInput" (ionInput)="setFilteredItems()">
+        
+        </ion-searchbar>
+</ion-col>
+<ion-col col-2>
+       <ion-icon name="contact" class="user" (click)="account()"></ion-icon>
+    
+</ion-col></ion-row></ion-grid>
+  </ion-toolbar>
+ 
+</ion-header>
+
+
+<ion-content>
+<div class="salon-glry">
+<!-- <div class="photossalon"> -->
+<ion-grid class="gly">
+<ion-row *ngFor="let showdata of traildata" >
+<ion-col col-12 no-padding >
+<div class="gallery1" >
+   <video controls="controls" controlsList="nodownload" id="showdata_{{showdata._id}}"  preload="none" onclick="this.play()" src="{{showdata.trailer}}"> Your browser does not support the video tag</video>
+</div>
+</ion-col>
+</ion-row>
+
+<!-- <ion-row>
+<ion-col col-12 no-padding >
+<div class="gallery1">
+<img src="assets/imgs/gallery4.png">
+</div>
+</ion-col>
+</ion-row>
+
+<ion-row>
+<ion-col col-12 no-padding >
+<div class="gallery1">
+<img src="assets/imgs/gallery7.png">
+</div>
+</ion-col>
+</ion-row>
+
+<ion-row>
+<ion-col col-12 no-padding >
+<div class="gallery1">
+<img src="assets/imgs/gallery8.png">
+</div>
+</ion-col>
+</ion-row> -->
+</ion-grid>
+</div>
+</ion-content>

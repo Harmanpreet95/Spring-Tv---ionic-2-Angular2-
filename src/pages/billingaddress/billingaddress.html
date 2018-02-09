@@ -1,0 +1,258 @@
+ <ion-header no-border class="header">
+  <ion-toolbar  class="logo">
+  <ion-grid>
+  <ion-row>
+  <ion-col col-2 no-padding>
+  <button  class="backbtn" (click)="backtocart()">
+            <ion-icon class="customIcon" name="arrow-back"></ion-icon>
+        </button>
+      </ion-col>
+      
+  <ion-col col-10 no-padding>    
+    
+ <ion-title ><h5>Billing Address</h5></ion-title>
+</ion-col>
+ </ion-row> 
+  </ion-grid>
+</ion-toolbar> 
+</ion-header>  
+
+<ion-content >
+  <form #buyForm="ngForm"  (ngSubmit)=" buylocal(detailForm)">
+    <ion-list>
+<ion-grid class="editprf-list">
+ <ion-row>
+    <ion-col col-2 no-padding>
+<div class="bilng-img">
+  <img src="{{this.mov_thumb}}">
+</div>
+  </ion-col>
+   <ion-col col-5 no-padding>
+     <div class="txt-bill">
+     <h2>{{this.mov_name}}</h2>
+   
+ </div> 
+ </ion-col>
+  <ion-col col-5>
+    <!-- <ion-list> -->
+  <ion-item class="btnwhyt" no-padding>
+    <!--<ion-label class="fixed">  <ion-icon name="call" class="icon"></ion-icon></ion-label>-->
+    <ion-input type="num" [(ngModel)]="data.quantity" name="quantity"  placeholder="Quantity"  #quantity='ngModel' pattern='[0-9]+' maxlength="2"></ion-input>
+  </ion-item>
+
+<!-- </ion-list> -->
+  </ion-col>
+  </ion-row>
+ <ion-row>
+    <ion-col col-12 no-padding>
+  <ion-item class="btnwhyt" no-padding>
+    <ion-input type="text"  placeholder="Name" pattern="[a-zA-Z ]+" [(ngModel)]="data.name" name="name" id="name" #name="ngModel"></ion-input>
+  </ion-item>
+  </ion-col>
+  </ion-row>
+
+ <ion-row>
+<ion-col col-12  no-padding>
+<!-- <ion-list> -->
+  <ion-item class="btnwhyt" no-padding>
+    <!--<ion-label class="fixed">  <ion-icon name="call" class="icon"></ion-icon></ion-label>-->
+    <ion-input type="tel" [(ngModel)]="data.phone" name="phone" placeholder="Mobile Number"  #phone='ngModel' pattern='[0-9]+' maxlength="15"></ion-input>
+  </ion-item>
+
+<!-- </ion-list> -->
+    </ion-col>
+  </ion-row>
+
+   <!--<ion-row>
+<ion-col col-12  no-padding>
+<ion-list>
+  <ion-item class="btnwhyt" no-padding>
+    <ion-input type="tel" value="" placeholder=" Phone no.(alternative)"></ion-input>
+  </ion-item>
+
+</ion-list>
+    </ion-col>
+  </ion-row>-->
+
+  <ion-row>
+<ion-col col-12  no-padding>
+<!-- <ion-list> -->
+  <ion-item class="btnwhyt" no-padding>
+    <!--<ion-label class="fixed">   <ion-icon class="icon" name="flag"></ion-icon></ion-label>-->
+    <ion-input type="text" placeholder="Address" [(ngModel)]="data.address" name="address" id="address" #address="ngModel"></ion-input>
+  </ion-item>
+
+<!-- </ion-list> -->
+    </ion-col>
+  </ion-row>
+  <!--<ion-row>
+<ion-col col-12  no-padding>
+<ion-list>
+  <ion-item class="btnwhyt" no-padding>
+    
+    <ion-input type="text" value="" placeholder="Address(alternative)"></ion-input>
+  </ion-item>
+
+</ion-list>
+    </ion-col>
+  </ion-row>-->
+  <ion-row>
+<ion-col col-12  no-padding>
+<!-- <ion-list> -->
+  <ion-item class="btnwhyt" no-padding>
+    <!--<ion-label class="fixed">   <ion-icon class="icon" name="flag"></ion-icon></ion-label>-->
+    <ion-input type="text" placeholder="City" pattern="[a-zA-Z ]+" [(ngModel)]="data.city" name="city" id="city" #city="ngModel"></ion-input>
+  </ion-item>
+
+<!-- </ion-list> -->
+    </ion-col>
+  </ion-row>
+
+    <ion-row>
+<ion-col col-12  no-padding>
+<!-- <ion-list> -->
+  <ion-item class="btnwhyt" no-padding>
+    <!--<ion-label class="fixed">   <ion-icon class="icon" name="flag"></ion-icon></ion-label>-->
+    <ion-input type="text" placeholder="State" pattern="[a-zA-Z ]+" [(ngModel)]="data.state" name="state" id="state" #state="ngModel"></ion-input>
+  </ion-item>
+<!-- </ion-list> -->
+    </ion-col>
+  </ion-row>
+  <ion-row>
+<ion-col col-12  no-padding>
+<!-- <ion-list> -->
+  <ion-item class="btnwhyt" no-padding>
+    <ion-input type="text"  placeholder="Country" pattern="[a-zA-Z ]+" [(ngModel)]="data.country" name="country" id="country" #country="ngModel"></ion-input>
+  </ion-item>
+
+<!-- </ion-list> -->
+    </ion-col>
+  </ion-row>
+ <ion-row>
+<ion-col col-12  no-padding>
+<!-- <ion-list> -->
+  <ion-item class="btnwhyt" no-padding>
+    <!--<ion-label class="fixed">  <ion-icon name="call" class="icon"></ion-icon></ion-label>-->
+    <ion-input type="num" placeholder="ZipCode"  [(ngModel)]="data.zipcode" name="zipcode" id="zipcode" #zipcode="ngModel"></ion-input>
+  </ion-item>
+
+<!-- </ion-list> -->
+    </ion-col>
+  </ion-row>
+</ion-grid>
+    <!-- </ion-list>
+<ion-list> -->
+<ion-grid class="shippng-grid">
+  <ion-row>
+    <ion-col col-12 no-padding>
+      <ion-card class="txt">
+      <h6>Shipping Address</h6></ion-card>
+    </ion-col></ion-row>
+  <ion-row>
+    <ion-col col-12 no-padding>
+<!-- <ion-list> -->
+
+  <ion-item class="btnwhyt" no-padding>
+    <!--<ion-label class="fixed" >  <ion-icon name="person" ></ion-icon></ion-label>-->
+    <ion-input type="text" placeholder="Shipping Name" pattern="[a-zA-Z ]+" [(ngModel)]="data.sname" name="sname" id="sname" #sname="ngModel"></ion-input>
+  </ion-item>
+  <!-- </ion-list> -->
+  </ion-col>
+  </ion-row>
+ <ion-row>
+<ion-col col-12  no-padding>
+<!-- <ion-list> -->
+  <ion-item class="btnwhyt" no-padding>
+    <!--<ion-label class="fixed">  <ion-icon name="call" class="icon"></ion-icon></ion-label>-->
+    <ion-input type="tel" [(ngModel)]="data.sphone" name="sphone" placeholder="Shipping Mobile Number"  #sphone='ngModel' pattern='[0-9]+' maxlength="15"></ion-input>
+  </ion-item>
+
+<!-- </ion-list> -->
+    </ion-col>
+  </ion-row>
+
+   <!--<ion-row>
+<ion-col col-12  no-padding>
+<ion-list>
+  <ion-item class="btnwhyt" no-padding>
+    <ion-input type="tel" value="" placeholder=" Phone no.(alternative)"></ion-input>
+  </ion-item>
+
+</ion-list>
+    </ion-col>
+  </ion-row>-->
+
+  <ion-row>
+<ion-col col-12  no-padding>
+<!-- <ion-list> -->
+  <ion-item class="btnwhyt" no-padding>
+    <!--<ion-label class="fixed">   <ion-icon class="icon" name="flag"></ion-icon></ion-label>-->
+    <ion-input type="text"  placeholder="Shipping Address"  [(ngModel)]="data.saddress" name="saddress" id="saddress" #saddress="ngModel"></ion-input>
+  </ion-item>
+
+<!-- </ion-list> -->
+    </ion-col>
+  </ion-row>
+  <!--<ion-row>
+<ion-col col-12  no-padding>
+<ion-list>
+  <ion-item class="btnwhyt" no-padding>
+    <ion-input type="text" value="" placeholder="Address(alternative)"></ion-input>
+  </ion-item>
+
+</ion-list>
+    </ion-col>
+  </ion-row>-->
+  <ion-row>
+<ion-col col-12  no-padding>
+<!-- <ion-list> -->
+  <ion-item class="btnwhyt" no-padding>
+    <!--<ion-label class="fixed">   <ion-icon class="icon" name="flag"></ion-icon></ion-label>-->
+    <ion-input type="text"  placeholder="Shipping City" pattern="[a-zA-Z ]+" [(ngModel)]="data.scity" name="scity" id="scity" #scity="ngModel"></ion-input>
+  </ion-item>
+
+<!-- </ion-list> -->
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+<ion-col col-12  no-padding>
+<!-- <ion-list> -->
+  <ion-item class="btnwhyt" no-padding>
+    <!--<ion-label class="fixed">   <ion-icon class="icon" name="flag"></ion-icon></ion-label>-->
+    <ion-input type="text" placeholder="Shipping State" pattern="[a-zA-Z ]+" [(ngModel)]="data.sstate" name="sstate" id="sstate" #sstate="ngModel"></ion-input>
+  </ion-item>
+
+<!-- </ion-list> -->
+    </ion-col>
+  </ion-row>
+  <ion-row>
+<ion-col col-12  no-padding>
+<!-- <ion-list> -->
+  <ion-item class="btnwhyt" no-padding>
+    <ion-input type="text" placeholder="Shipping Country" pattern="[a-zA-Z ]+" [(ngModel)]="data.scountry" name="scountry" id="scountry" #scountry="ngModel"></ion-input>
+  </ion-item>
+
+<!-- </ion-list> -->
+    </ion-col>
+  </ion-row>
+ <ion-row>
+<ion-col col-12  no-padding>
+<!-- <ion-list> -->
+  <ion-item class="btnwhyt" no-padding>
+    <!--<ion-label class="fixed">  <ion-icon name="call" class="icon"></ion-icon></ion-label>-->
+    <ion-input type="num"  placeholder="Shipping ZipCode"  [(ngModel)]="data.szipcode" name="szipcode" id="szipcode" #szipcode="ngModel"></ion-input>
+  </ion-item>
+
+<!-- </ion-list> -->
+    </ion-col>
+  </ion-row>
+  <ion-row>
+<ion-col col-12 no-padding>
+ <button (click)="buylocal(buyForm)" ion-button full class="btnpink"><h3>Payment</h3></button>
+ </ion-col>
+ </ion-row>
+  </ion-grid>
+    </ion-list>
+</form>
+</ion-content>

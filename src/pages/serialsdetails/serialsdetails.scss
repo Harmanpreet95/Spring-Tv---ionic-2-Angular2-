@@ -1,0 +1,464 @@
+page-serialsdetails {
+.backbtn{background-color: transparent;}
+// .button{
+// overflow: hidden;
+//     height: 47px;
+//         padding: 0 66px;
+//     font-size: 17px;
+//     font-weight: 300;
+//     text-transform: uppercase;
+//     color: #fff;
+//     background-color: #0e086f;}
+.toolbar-title{
+    text-align: left;
+    margin-left: 52px;
+}
+
+    .button{
+    overflow: hidden;
+    height: 47px;
+    padding: 0 30px;
+    font-size: 17px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #0e086f;
+    margin-left: 20px;
+}
+   
+   .trailerbtn{
+  margin-top:-12px;
+  margin-right: 11px;
+}
+   .trailer{  
+    position: relative;
+    width: auto;
+    height: 200px;
+    overflow: hidden; 
+    box-shadow:0 0px 0px 0 rgba(0, 0, 0, 0), 0 0px 0px 0px rgba(0, 0, 0, 0), 0 0px 0px 0 rgba(0, 0, 0, 0);
+    -webkit-box-shadow:0;}
+
+   h1 {
+    font-size: 21px;
+    text-align: center;
+    margin-left: 0;
+    color: #121111;
+    margin-top: 4px;
+}
+   
+h2 { 
+    margin-top: 13px;
+    font-size: 14px;
+    color: #171515;
+  text-align: left;
+    margin-left: 8px;
+}
+    p{
+   text-align: justify;
+    color: #0e0d0d;
+   padding: 0px 8px 2px 8px;
+   width: 100%;
+   float:left;
+   }
+
+.txt{   
+     border-bottom: 1px solid #dedada;
+     padding-top: 0;
+    }
+
+h3{
+    font-size: 19px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #bb0032;
+    font-weight: 900;
+    padding: 11px;
+    border-bottom: 1px solid #dedada;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.trailerimg {position: absolute;
+    height: 100%;
+    min-height: 197px;
+    top: 0px;
+    left: 0px;
+  
+    right: 0px;
+    height: 200px;}
+div {
+    position: relative;
+  
+  }
+
+  .card-title {
+    position: absolute;
+    top: 71%;
+    font-size: 13px;
+    width: 100%;
+    font-weight: 400;
+    color: #fff;
+    text-align:left;
+    padding-left:10px;
+  }
+.videoicon{
+	    width: 57px;
+    padding-top: 48px;
+    float: none;
+    margin: 0 auto;
+    display: table;}
+div {
+
+    position: relative;
+    text-align: center;
+  }
+
+  .card-title h6{
+    margin: 0 0 2px -17px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #f5f2f2;
+    width: 100%;
+    float: left;
+
+  }
+      .card-title h4 {
+    margin: 7px 0;
+    font-size: 12px;
+    font-weight: 100;
+    color: #fff;
+    margin-right: 81px;
+    width: 100%;
+    float: left;
+    text-align: left;
+    padding-left: 6px;
+}
+
+  ul.list{
+      list-style-type: none;
+    font-size: 1.0em;    
+    width: 100%;
+    color: #fff;
+  }
+
+  ul.list li{
+    float: left;
+    padding: 0 4px;
+    font-size: 25px;
+    color: #fff;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    margin: -11px 1px;
+    background-color: #330969;
+  }
+    .ionicn { 
+    display: inline-block;
+    font-size: 21px;
+    line-height: -10px;
+    padding: 8px 6px;
+}
+
+    button.backbtn {
+    position: absolute;
+    color: #fff;
+    top: 0px;
+    left: 10px;
+    font-size: 20px;
+}
+
+.select .select-icon {
+    position: absolute;
+    // float: left;
+    // left: 147px;
+    // top: 15px;
+    float: right;
+    right: 116px;
+    top: 15px;
+}
+
+.fixed-content{
+    margin-top: 53px !important;
+}
+
+.pic_epsode {
+  width: 100%;
+  float: left;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.pic_epsode img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+}
+
+ .item-select .label{
+     color:#757575;
+ }
+
+.buy-butn{
+    font-size: 10px;
+    padding: 0 13px;
+    height: 37px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.grid{
+    padding: 0;
+}
+
+// *--------11/27/17-----------*\\
+
+.button-md:hover:not(.disable-hover) {
+
+    background-color: #0e086f;
+
+}
+
+.btn.button {
+
+    cursor: auto;
+
+}
+
+.buy-butn.button-md:hover:not(.disable-hover) {
+
+    background-color: #488aff;
+
+}}
+
+// video {
+//     vertical-align: baseline;
+//     width: 100%;
+//     height: 100%;
+// }
+
+// .trailer {
+//     position: relative;
+//     width: 100%;
+//     height: 200px;
+//     overflow: hidden;
+// }
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation: landscape){
+
+ .select .select-icon {
+    position: absolute;
+    float: left;
+    left: 53%;
+    top: 15px;
+}
+
+/*h1::before, h1::after {
+  
+    width: 324px !important;
+ 
+}
+
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) and (orientation: landscape){*/
+
+
+h1::before, h1::after {
+ 
+    width: 324px !important;
+
+}
+
+video{
+    width: 100%;
+    height: auto !important;
+}
+
+ .trailerbtn {
+    margin-top: -12px;
+    margin-right: 11px;
+    position: absolute;
+    bottom: 66px;
+    left: 34%;
+}
+
+ .trailer {
+
+    height: 500px !important;
+}
+
+h1 {
+    margin-top: 43px !important;
+}
+
+.trailerbtn .button{
+padding: 0 53px !important;
+}
+}
+
+
+@media only screen and (min-width:320px) and (max-width:480px) and (orientation:landscape) {
+
+video{
+    width: 100%;
+    height: auto !important;
+}
+
+
+ .trailer {
+
+    height: 270px !important;
+}
+
+h1 {
+    margin-top: 43px !important;
+}
+
+.trailerbtn .button{
+padding: 0 53px !important;
+}
+
+ .select .select-icon {
+    position: absolute;
+    float: right;
+    right: 194px !important;
+ }
+ 
+ .trailerbtn {
+/*    margin-top: -12px;
+    margin-right: 11px;
+    position: absolute;
+    bottom: 66px;
+    left: 34%;*/
+position: absolute;
+left: 21%;
+}
+
+}
+
+
+/*@media only screen  and (max-width : 767px) {
+    
+ video{
+    width: 100%;
+    height: auto !important;
+}
+
+
+ .trailer {
+
+    height: 232px !important;
+}    
+    
+}*/
+@media only screen  and (min-width : 1224px) {
+
+video{
+    width: 100%;
+    height: auto !important;
+}
+
+
+ .trailer {
+
+    height: 500px !important;
+}
+
+
+h1 {
+    margin-top: 43px !important;
+}
+
+.trailerbtn .button{
+padding: 0 53px !important;
+}
+
+ .trailerbtn {
+    margin-top: -12px;
+    margin-right: 11px;
+    position: absolute;
+    bottom: 66px;
+    left: 34%;
+}
+}
+
+// @media only screen and (max-width:516px){
+//     video{
+//     width: 100%;
+//     height: auto !important;
+// }
+
+
+//  .trailer {
+
+//     height: 500px !important;
+// }
+
+//  .trailerbtn {
+//     margin-top: -12px;
+//     margin-right: 11px;
+//     position: absolute;
+//     bottom: 66px;
+//     left: 34%;
+// }
+
+// h1 {
+//     margin-top: 43px !important;
+// }
+// }
+
+
+
+
+/*@media only screen and (min-width:516px) and (max-width:680px) and (orientation: landscape){
+
+video{
+    width: 100%;
+    height: auto !important;
+}
+
+
+ .trailer {
+
+    height: 500px !important;
+}
+
+ .trailerbtn {
+    margin-top: -12px;
+    margin-right: 11px;
+    position: absolute;
+    bottom: 39px;
+    left: 34%;
+}*/
+
+// h1 {
+//     margin-top: 0px !important;
+// }
+
+
+
+// @media only screen and (min-width : 320px) and (max-width : 568px) {
+
+//     video{
+//     width: 100%;
+//     height: auto !important;
+// }
+
+
+//  .trailer {
+
+//     height: 500px !important;
+// }
+
+//  .trailerbtn {
+//     margin-top: -12px;
+//     margin-right: 11px;
+//     position: absolute;
+//     bottom: 39px;
+//     left: 34%;
+// }
+// }

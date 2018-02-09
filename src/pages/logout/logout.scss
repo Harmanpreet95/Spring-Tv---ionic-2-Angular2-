@@ -1,0 +1,181 @@
+page-logout {
+      .ion-pg{
+        .backbtn {
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 11px;
+    margin-right: 2px;
+}
+.toolbar-background{background-color:#251d6d;}
+     h5{ color:#fff;
+       font-size: 18px;
+    font-weight: 500;
+    margin-top: 11px;
+    text-align: left;}
+
+  }
+  
+  .ion-pg .back-button {
+    color: #fff;
+    display: none;
+}
+
+.changewrapper{
+    width: 123px;
+    height: 123px;
+    position: relative;
+    margin: 0 auto;
+    margin-top:15px;
+
+   .change-log {
+    width: 100px;
+float: none;
+position: relative;
+height: 100px;
+margin: 0 auto;
+border: 1px solid #fff;
+border-radius: 50%;
+overflow: hidden;
+.camera-icon {
+    width: 100%;
+    float: left;
+    position: absolute;
+    z-index: 9999999;
+    top: 0;
+}
+
+} 
+}
+
+
+
+.home-bg{
+    background: url("../assets/img/banner3-bg.jpg") ;
+        background-size: cover;
+}
+h6{
+	color:#fff;
+	text-align: left;
+	    margin-top: 11px;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    line-height: 1.2;
+    display: inline-block;
+}
+
+
+
+.log {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0px;
+    right: 0px;
+    margin: 0 auto;}
+
+.camera-icon ion-icon {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    position: absolute;
+  top: 75px;
+right: 12px;
+background: #251d6d;
+padding: 2px 4px;
+border-radius: 50px;
+}
+
+h2{     color: #fff;
+    font-weight: 100;
+    text-align: center;
+    padding-top: 11px;
+    font-size: 17px;
+    margin: 17px 0 10px 0;
+}
+p{font-weight: 300;
+    color: #fff;
+    text-align: center;
+    padding: 0px 39px;
+    font-size: 15px; 
+margin:0;
+padding-bottom: 72px;}
+
+
+.btn { float: right; box-shadow: 0 0;  -webkit-box-shadow:0 0;
+}
+
+.btnwhyt{
+    opacity:.3;
+    margin: 0;
+    }
+button.ion-bt {
+    margin-bottom: 0;
+    width: 100%;
+    float: left;
+border-radius: 5px;
+margin-top: 0;
+}
+button.log-btn{
+	border-radius: 5px;
+}
+.item{
+        border-radius: 5px;
+}
+h4{    font-size: 15px;
+    color: #c5c4c4;
+   
+    font-weight: 100;
+    margin:0;
+    text-align: center;}
+
+}
+
+
+ion-icon.tab-button-icon.icon.icon-md.ion-md-cls2-outline{
+    background: url("../assets/img/serials.png") no-repeat;
+        background-size: 30%;
+         background-position: center center;
+             width: 103px;
+    height: 30px;
+} 
+ion-icon.tab-button-icon.icon.icon-md.ion-md-cls2{
+     background: url("../assets/img/serials.png") no-repeat;
+        background-size: 30%;
+         background-position: center center;
+      width: 103px;
+    height: 30px;
+}
+ion-icon.tab-button-icon.icon.icon-md.ion-md-cls3-outline{
+    background: url("../assets/img/movies.png") no-repeat;
+        background-size: 30%;
+         background-position: center center;
+             width: 103px;
+    height: 30px;
+} 
+ion-icon.tab-button-icon.icon.icon-md.ion-md-cls3{
+     background: url("../assets/img/movies.png") no-repeat;
+        background-size: 30%;
+         background-position: center center;
+      width: 103px;
+    height: 30px;
+}
+ion-icon.tab-button-icon.icon.icon-md.ion-md-cls4-outline{
+    background: url("../assets/img/dwnld.png") no-repeat;
+        background-size: 30%;
+         background-position: center center;
+             width: 103px;
+    height: 30px;
+} 
+ion-icon.tab-button-icon.icon.icon-md.ion-md-cls4{
+     background: url("../assets/img/dwnld.png") no-repeat;
+        background-size: 30%;
+         background-position: center center;
+      width: 103px;
+    height: 30px;
+}
+
+
+

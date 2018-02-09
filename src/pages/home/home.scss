@@ -1,0 +1,41 @@
+page-home {
+.home-bg{
+	background: url("../assets/img/banner-bg.jpg") ;
+	    background-size: cover;
+}
+img{
+   
+   max-width: 80%;
+    border: 0;
+    float: none;
+    display: table;
+    margin: 0 auto;
+}
+h2{ color:#fff;
+	text-align: center;
+	    padding-top: 54px;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+p{font-weight: 300;
+    color: #fff;
+    text-align: center;
+    padding: 0px 10px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    border-radius: 5px;}
+
+
+
+.btnwhyt{
+	opacity:.3;
+    font-size: 16px;
+    font-weight: 500;
+border-radius: 5px;}
+.btnblu{border-radius: 5px;}
+
+button{padding-top: 20px;}
+.slide-pg{height: 34%;
+}
+}

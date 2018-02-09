@@ -1,0 +1,99 @@
+page-confirm {
+.back-button{color:#fff;
+ background-color: transparent;
+}
+
+.back-button:hover:not(.disable-hover) {
+    color: #fff;
+}
+	.toolbar-background{background-color:#251d6d;}
+     h5{color:#fff;
+            font-size:18px;
+            font-weight: 500;
+     }
+     
+     button.backbtn {
+         color:#fff;
+    background-color: transparent;
+}
+/*     .button{
+         background-color: transparent;
+     }*/
+.methods {
+    background: url("../assets/img/banner3-bg.jpg") ;
+        background-size: cover;
+        
+	ion-list{  
+/*            margin: -16px;*/
+    padding-top: 16px;
+    padding-bottom: 12px;
+    display: block;
+    list-style-type: none;
+		}
+        
+
+          h5{color:#fff;
+            font-size:15px;
+            font-weight: 300;}
+          
+.item-cnfrm{
+    margin-top: 5px;
+    margin-left: 3px;
+    padding-right:3px;
+
+}
+
+img{   
+    border-radius: 50%;
+    overflow: hidden;
+    width: 40px;
+    height: 50px;
+    padding-bottom: 13px;
+   }
+   
+    h2{  
+    margin: 2px 6px;
+    font-size: 17px;
+    font-weight: 500;
+    display: inline-block;
+    padding: 4px 0;
+    }
+    
+    h3{
+        text-align: right;
+    margin-top: -21px;
+    color: #ff2300;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: normal;
+    }
+    
+    h6{  
+        margin: 2px 0;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: normal;}
+  
+    p{    overflow: inherit;
+    font-size: 13px;
+    line-height: normal;
+    text-overflow: inherit;
+    color: #bdb8b8;
+    }
+    .last {     margin-top: 110px;
+    border-top: 1px solid #f3f3f3;
+    border-bottom: 1px solid #fff;}
+    .btn h4{font-weight:200;
+      
+    font-size: 18px;
+    padding-top: 11px;}
+   .btn {
+    color: #fff;
+    background-color: #251d6d;
+    text-transform: none;}
+}
+
+
+
+
+}

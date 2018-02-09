@@ -1,0 +1,112 @@
+<ion-header>
+ <ion-toolbar color="blue">
+  <ion-title>{{dataiil.title}}</ion-title> 
+        <button  class="backbtn" (click)="movies()">
+            <ion-icon class="customIcon" name="arrow-back"></ion-icon>
+        </button>
+    <!-- <ion-title>Serials Details</ion-title>   -->
+   </ion-toolbar>                         
+    </ion-header> 
+<ion-content>
+
+  <ion-card class="trailer" no-margin>
+
+  <div class="trailerimg no-margin">
+
+ <!--<video width="340" height="200" controls src="{{dataiil.video}}">   Your browser does not support the video tag.                       </video>-->
+      
+       <video width="100%" controls controlsList="nodownload" src="{{dataiil.video}}" type="video/mp4" autoplay></video> 
+ 
+ </div>
+ <!-- <div class="videoicon">
+ <img src="assets/img/videoicon.png"/>
+
+ </div> -->
+ <!-- <div class="trailerbtn">
+
+ <button class="btn" ion-button round (click)="subscribe(actormovie._id,actormovie.title)">Watch Movies</button>
+ 
+ </div> -->
+   </ion-card>
+
+<div class="txt">
+   <h1>{{dataiil.title}} </h1></div>
+<ion-grid>
+  <ion-row>
+    <ion-col col-6 no-padding> 
+ <ion-card class="lu-lst">
+     <ul class="likes">
+
+
+    <li ><img (click)="likes()"  src="assets/img/like.png" width="22"/>
+      <!-- <img  *ngIf="this.lykval==0" src="assets/img/elike.png" width="22"/>
+       <img  *ngIf="this.lykval==2" src="assets/img/elike.png" width="22"/> -->
+    </li>
+         <li>{{this.lykval}}</li>
+<!--    <li>
+      <img  (click)="likes()"  src="assets/img/unlike.png" width="22"/>
+       <img *ngIf="this.lykval==1" src="assets/img/eunlike.png" width="22"/>
+      <img *ngIf="this.lykval==2" src="assets/img/eunlike.png" width="22"/> 
+    </li>
+    <li>{{this.dlykval}}</li>-->
+  
+  </ul> 
+ </ion-card>
+ <!-- <div >
+    <ul class="likes">
+    <li><img src="assets/img/like.png" width="12"/></li>
+    <li>{{actormovie.likes}}</li>
+    <li><img src="assets/img/unlike.png" width="12"/></li>
+    <li>{{actormovie.likes}}</li></ul></div> -->
+
+
+
+    </ion-col>
+<ion-col col-6>
+  <div (click)="download()">
+    <ion-icon name="download" class="ionicn"></ion-icon>
+</div>
+</ion-col>
+  </ion-row></ion-grid>
+
+ <div>
+        {{downloadprogress}}
+    </div>
+
+
+  <div class="time"><ion-icon name="time" class="watch" ></ion-icon><h5>{{dataiil.movie_duration}}</h5></div>
+<div>
+   <p>{{dataiil.description}}</p></div>
+<div class="actr">
+<h3>Actors</h3></div>
+<!-- <div (click)="download()">
+    <ion-icon name="arrow-round-down" class="ionicn"></ion-icon>
+</div> -->
+<!-- <ion-slides class="actrslider" *ngFor = "let actorlist of actorsall">
+  <ion-slide>
+    {{actorlist[1].name}}
+  <ion-grid>
+  <ion-row>
+  <ion-col col-4>
+   <img [src]="actorlist[1].image" />
+</ion-col>
+</ion-row>
+</ion-grid>
+</ion-slide>
+</ion-slides> -->
+
+
+ <ion-slides pager class="slides slides-md slides-1" slidesPerView = '3' style=" background: url(assets/images/gradient.png) no-repeat center fixed; 
+              background-size: cover;"  >
+           
+                  <ion-slide  *ngFor = "let actorlist of actorsall">
+                          
+                                <div class="scroll-imgss">
+                                  <img class="actr-imges" [src]="actorlist[1].image" /></div>
+                                  <span>{{actorlist[1].name}}</span>
+              
+                     
+                  </ion-slide>
+                </ion-slides>
+                     
+</ion-content>

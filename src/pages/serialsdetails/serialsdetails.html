@@ -1,0 +1,88 @@
+  
+<ion-header>
+ <ion-toolbar color="blue">
+  <ion-title>Serials Details</ion-title> 
+        <button  class="backbtn" (click)="serials()" float-left>
+            <ion-icon class="customIcon" name="arrow-back"></ion-icon>
+        </button>
+    <!-- <ion-title>Serials Details</ion-title>   -->
+   </ion-toolbar>                         
+    </ion-header> 
+
+<ion-content>
+
+  <ion-card class="trailer" no-margin>
+
+  <div class="trailerimg no-margin" style="height:200px;">
+
+ <!--<video style="min-width:100%; max-width:40%; height:200px" controls src="{{serialz.trailer}}"> Your browser does not support the video tag. </video>-->
+ <!--<iframe width="100%" height="315" src="{{serialz.trailer}}" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>-->
+
+ 
+  <video width="100%" controls controlsList="nodownload" src="{{serialz.trailer}}" type="video/mp4"></video>
+  
+  </div>
+    
+   </ion-card>
+
+    <div class="trailerbtn">
+
+ <button class="btn" ion-button round >Watch Episode</button>
+ </div>
+<div class="txt">
+   <h1>{{serialz.title}} </h1>
+<ion-grid>
+    <ion-row>
+        <ion-col col-6 no-padding>
+   <h2>TV Series</h2></ion-col>
+    <ion-col col-6 no-padding>
+     <button class="buy-butn" ion-button round (click)="movtobuy(this.season_id,serialz.title,serialz.thumbnail)" >Buy now</button>
+</ion-col></ion-row></ion-grid>
+   <p>{{serialz.description}}</p>
+</div>
+<div class="season2"  >
+    <!-- <h3>Season1</h3>    -->
+
+
+<ion-item>
+  <ion-label>Seasons</ion-label>
+
+  <ion-select [(ngModel)]="this.toppings" (ionChange)="fetchseaepi()">
+      <ion-option *ngFor = "let actorlist of seasonz"> {{actorlist.season_name}} </ion-option >
+  </ion-select>
+</ion-item>
+
+
+      <!-- <ion-icon class="arw-drp" name="arrow-dropdown"></ion-icon>   -->
+
+</div>  
+
+<div  *ngFor = "let episo of episodez">
+<ion-card >
+<div class="pic_epsode">
+<img src="{{episo.thumbnail}}" (click)="moveepisode(this.season_id,this.sreal,episo._id)"/>
+</div>
+    <div class="card-title">
+<div style="width: 40%; float: left;">
+    <h6>{{episo.title}}</h6>
+    <h4>27 Mins</h4>
+    </div>
+ <!-- <select [(ngModel)]="selectedserialz._id">
+  <option *ngFor="let country of countries" value= {{serialz._id}}>
+     {{serialz.name}}
+  </option>
+</select>  -->
+    <div style="width: 48%; float: right;">
+
+    <ul class="list">
+    <li><ion-icon name="information-circle" class="ionicn"></ion-icon></li>
+    <li> <ion-icon name="play"  class="ionicn" (click)="subscribe(this.season_id,this.sreal,episo._id)" ></ion-icon></li>
+    <!-- <li>  <ion-icon name="arrow-round-down" class="ionicn"></ion-icon></li> -->
+    </ul>
+    </div>
+
+    </div>
+  </ion-card>
+
+</div>
+</ion-content>

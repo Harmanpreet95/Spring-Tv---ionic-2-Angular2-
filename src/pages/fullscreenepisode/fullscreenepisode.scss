@@ -1,0 +1,287 @@
+page-fullscreenepisode {
+.backbtn{background-color: transparent;}
+.button{
+overflow: hidden;
+    height: 47px;
+        padding: 0 66px;
+    font-size: 17px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #0e086f;}
+   
+   .trailerbtn{
+       position: absolute;
+    bottom: 2px;
+    left: 0;
+    right: 0;
+}
+   
+   h1{      font-size: 17px;
+    text-align: center;
+    margin-left: 0px;
+    color:#121111;  
+    margin-top: 4px;}
+   
+   [noScroll] {
+  overflow: hidden;
+}
+   .card-ios { width: 100%}
+
+h2 { margin-top: -0.7rem;
+    
+    font-size: 14px;
+    color: #171515;
+  text-align: left;
+    margin-left: 15px;
+}
+//     p{   text-align: left;
+//         padding-top: 9px;
+//     padding-bottom: 2px;
+//     color: #0e0d0d;
+//     margin-left: 15px;
+//    }
+
+.txt{    border-bottom: 1px solid #dedada;}
+h3{font-size: 19px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #bb0032;
+    font-weight: 900;
+    padding: 11px;
+    border-bottom: 1px solid #dedada;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/*.trailerimg {position: absolute;
+    height: 100%;
+    min-height: 197px;
+    top: 0px;
+    left: 0px;
+  
+    right: 0px;
+    height: 200px;}*/
+div {
+    position: relative;
+  
+  }
+
+  .card-title {
+    position: absolute;
+    top: 71%;
+    font-size: 13px;
+    width: 100%;
+    font-weight: 400;
+    color: #fff;
+    text-align:left;
+    padding-left:10px;
+  }
+.videoicon{
+	    width: 57px;
+    padding-top: 48px;
+    float: none;
+    margin: 0 auto;
+    display: table;}
+div {
+
+    position: relative;
+    text-align: center;
+  }
+
+  .card-title h6{
+    margin: 0 0 2px -17px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #f5f2f2;
+
+  }
+      .card-title h4 {margin: 7px 0;
+    font-size: 12px;
+    font-weight: 100;
+    color: #fff;
+    margin-right: 81px;}
+  ul.list{list-style-type: none;
+    font-size: 1.0em;    
+    width: 100%;
+    color: #fff;
+
+    
+
+
+  }
+  ul.list li{
+  	
+    float: left;
+    padding: 0 4px;
+    font-size: 25px;
+    color: #fff;
+  
+    border-radius: 50%;
+    width: 38px;
+    
+    height: 38px;
+    margin: -11px 1px;
+    background-color: #330969;
+  }
+    .ionicn { 
+        display: inline-block;
+    font-size: 21px;
+    line-height: -10px;
+    padding: 22px 0 0 6px;
+}
+
+
+    button.backbtn {
+    position: absolute;
+    color: #fff;
+    top: 0px;
+    left: 10px;
+    font-size: 20px;
+}
+.select .select-icon {
+    position: absolute;
+    float: left;
+    left: 76px;
+top: 25px;
+}
+
+
+// ------------11/13/2017--------
+
+ul.likes li {
+    float: left;
+    padding: 0;
+    width: 21%;
+    font-size: 18px;
+    color: #c7bdbd;
+    list-style-type: none;
+    display: inline-block;
+    line-height: 24px;
+    margin-right: 0px;
+}
+.lu-lst{box-shadow: none;}
+
+
+ .watch {
+       font-size: 20px;
+    color: #fb0606;
+   width: 100%;
+   float: left;
+   margin-left:18px;
+   display:inline-block;
+       }
+
+   p {
+    text-align: justify;
+    color: #0e0d0d;
+    padding: 12px 12px 3px 14px;
+}
+
+h5{
+    font-size: 16px;
+    float: left;
+    margin-top: -20px;
+    margin-left: 44px;
+    display: inline-block;
+    margin-bottom: 14px;
+    width: 100%;
+}
+
+.time {
+    position: relative;
+    text-align: left;
+}
+
+.likes {
+    margin-left: -25px;
+}
+
+.toolbar-title.toolbar-title-md {
+    margin-left: 81px;
+    text-align: left;
+}
+
+h1::before{
+    display: inline-block;
+    content: "";
+    border-top: 1px solid #5d5d5d;
+    width: 40px;
+    margin: 4px 0;
+}
+
+ h1::after {
+    display: inline-block;
+    content: "";
+    border-top: 1px solid #5d5d5d;
+    width: 40px;
+    margin: 4px 0;
+}
+
+.ionicn{
+    margin-left: 74px;
+}
+
+ion-slides {
+    display: block;
+    width: 100%;
+  height: 34%;
+margin-top: -29px;
+}
+.actr-imges {
+    width: 100%;
+    height: 100%;
+}
+
+.scroll-imgss {
+    position: relative;
+    width: 89px;
+    height: 89px;
+    overflow: hidden;
+}
+
+.grid{
+    padding:0;
+}
+
+ ul.likes li:last-child {
+    color: #c7bdbd;
+    font-size: 18px;
+    height: 38px;
+}
+.card{
+    width:100% !important;
+    margin:0px;
+}
+}
+
+
+@media only screen and (min-width:400px) and (max-width:486px) and (orientation:landscape) {
+    
+    video{
+    width: 100%;
+    height: auto !important;
+}
+
+.trailer {
+
+    height: 277px !important;
+}
+
+
+}
+
+@media only screen and (min-width:400px) and (max-width:496px) and (orientation:landscape) {
+       video{
+    width: 100%;
+    height: auto !important;
+}
+
+.trailer {
+
+    height: 277px !important;
+}
+
+
+}

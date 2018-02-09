@@ -1,0 +1,98 @@
+<ion-content padding class="home-bg" hide-tabs>
+  <form #signinForm="ngForm">
+<div class="logo">
+<img src="assets/img/logo.png"/>
+</div>
+<div>
+  
+  <ion-grid>
+  <ion-row>
+    <ion-col col-12>
+
+  <h2>WELCOME</h2>
+  <p>to Spring TV</p>
+    </ion-col>
+  </ion-row>
+ 
+  <ion-row>
+    <ion-col col-12>
+<ion-list>
+ 
+  <ion-item class="btnwhyt">
+   <ion-label > <ion-icon name="person"></ion-icon></ion-label>
+    <ion-input type="email" [(ngModel)]="data.email" name="email" placeholder="Email Address"   #email='ngModel' required pattern='^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$'></ion-input>
+  </ion-item>
+       <ion-label  class="alert alert-danger" color="danger">
+       <div *ngIf="email.errors && (email.dirty || email.touched)" >
+         <div [hidden]="!email.errors.required" >
+           Email is required
+          </div>
+          <div [hidden]="!email.errors.pattern" >
+           In-valid email
+          </div>
+       </div>
+      </ion-label>
+  </ion-list>
+  </ion-col>
+  </ion-row>
+
+
+
+<ion-row>
+<ion-col col-12>
+<ion-list>
+  <ion-item class="btnwhyt">
+    <ion-label><ion-icon name="lock"></ion-icon></ion-label>
+   
+<ion-input type="password" placeholder="Password" [(ngModel)]="data.password" name="password" type="password"  id="password" minlength="6" required   #password="ngModel"></ion-input>
+
+
+  </ion-item>
+   
+
+    <ion-label class="alert alert-danger" color="danger">
+        <div *ngIf="password.errors && (password.dirty || password.touched)">
+          <div [hidden]="!password.errors.required" >
+            Password is required
+            </div>
+        </div>
+    <div *ngIf="password.errors && (password.dirty || password.touched)" >
+       <div [hidden]="!password.errors.minlength" >
+         Password Minlength 6 Character 
+        </div>
+    </div>
+    </ion-label>
+</ion-list>
+    </ion-col>
+  </ion-row>
+   
+
+
+  <ion-row>
+    <ion-col col-12>
+   <button ion-button full color="blue" class="btnblu"(click)="signin_form(signinForm)" [disabled]="!signinForm.form.valid">Sign In</button>
+    </ion-col>
+  </ion-row></ion-grid>
+
+  </div>
+</form>
+   <h4 (click)="signup()">Create Account</h4>
+<h5 (click)="frgt()">Forgot Password?</h5>
+  <div class="or">
+<h1>or</h1> 
+ </div>
+ <h6>Connect with us</h6>
+
+
+ <ion-grid>
+   <ion-row>
+     <ion-col col-12>
+       <button ion-button full color="blue" class="btnblu" (click)="facebook();">Sign In with facebook</button>
+    
+     </ion-col>
+   </ion-row>
+ </ion-grid>
+
+
+ 
+</ion-content>

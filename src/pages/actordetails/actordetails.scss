@@ -1,0 +1,261 @@
+page-actordetails {
+	ion-icon{
+		position: relative;
+	}
+
+.toolbar-background{
+    background-color: #251d6d !important;
+}
+
+ h5{
+    color:#fff;
+       font-size: 18px;
+    font-weight: 500;
+    margin-top: 11px;
+    text-align: left;
+        }
+
+button.backbtn {
+    background-color: transparent;
+    color: #fff;
+    font-size: 24px;
+    margin-top: 7px;
+}
+
+/* .back-button:hover{
+    color:#fff;
+}*/
+
+.bar-button-default-md:hover:not(.disable-hover){
+    color: #fff;
+}
+
+.sub-imgs img{
+	    width: 28%;
+	    padding-top: 5px;
+	    margin-right: 2px;
+}
+
+button{
+	background-color: transparent;
+}
+ .grid{
+ 	padding: 0 5px;
+    	}
+
+span{	
+	color:#fff;
+	font-size: 14px;
+}
+
+.grid .lftryt{
+	padding:0;
+	margin-top: 7px;
+}
+ .lftryt img{
+    margin-top:16px;
+ }
+
+.prf-img{
+    position: relative;
+    overflow: hidden;
+    width: 132px;
+    float: left;
+    height: 159px;
+    border: 9px solid #dadada;
+    border-radius: 9px;
+}
+
+.prf1 img {
+    max-width: 100%;
+}
+
+
+
+h6{
+	padding-top: 0;
+	color: #515e73;
+    text-align: right;
+    margin-top: 0;
+}
+
+.hrt-icon {
+	 font-size: 36px;
+    left: 0;
+    color: #515e73;
+    margin-left: 6px;
+    margin-top: 4px;
+}
+.star{
+	color: #ff8800;
+    left:0;
+    font-size: 17px;
+    margin-bottom: 7px;
+}
+
+.rating {
+    border: 2px solid #0045d1;
+    width: 78%;
+    background-color: #0045d1;
+    border-radius: 7px;
+}
+
+
+
+h2 {
+    font-weight: normal;
+    font-size: 23px;
+    margin-top: 0px;
+    color: #000 !important;
+    margin-bottom: 1px;
+    text-align: center;
+
+ }
+
+  span.num { 
+    color: #fff;
+    /* border: 1px solid red; */
+    border-radius: 5px;
+    background-color: #0045d1;
+    padding: 4px;
+    font-size: 12px;
+}
+
+
+
+
+
+
+ .hdng {
+    margin-left: 22px;
+    margin-top: 13px;
+}
+
+.prfsnls-prfl{
+    padding: 0 12px;
+}
+
+.start-text{
+    color: #000 !important;
+}
+
+.list.grid{
+    padding: 0;
+}
+
+.prfsnls-prfl2{
+    padding: 0 12px;
+    margin-top: 8px;
+}
+
+ span.price{
+   color: #515e73;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.prfsnls-prfl3{
+    position: relative;
+    padding: 0 12px;
+    margin-top: 8px;
+    overflow:hidden;
+}
+
+.about{
+    text-align: center;
+
+    h1 {
+    color: #000;
+    margin-top: 7px;
+    // font-size: 23px;
+    // font-weight: normal;
+    margin-bottom: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+  h5 {
+    font-size: 13px;
+    color: #000;
+    text-align: center;
+    margin-top: 0;
+}
+
+p{
+   color: #000;
+    font-size: 16px;
+    text-transform: none;
+    text-align: justify;
+    margin-top: 1px;
+    padding: 0 17px;
+    margin-bottom: 4px;
+}
+}
+
+p.work {
+    /* margin: 0; */
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+    font-size: 19px;
+    color: #000;
+    padding: 8px 0;
+    text-align: center;
+    font-weight: normal;
+}
+
+.actsmovies {
+    border-radius: 3px;
+    margin-top: 20px;
+    border: 2px solid #251d6d;
+}
+
+.gallery1 {
+   width:  100%;
+height: 192px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2px;
+
+}
+.gallery1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.grid{
+    padding: 0;
+}
+
+.btn-blu{
+    text-align: center;
+}
+
+.salon-glry {
+    padding: 0 1px;
+        margin-top: 1px;
+}
+
+// ---11/23/17-----
+.btn-blu .button{
+    width:100%;
+}
+
+.btn-blu {
+    text-align: center;
+    width: 100%;
+    float: left;
+    margin-left: -2px;
+}
+
+p{text-align:center;
+     font-size: 14px;
+      font-weight: bold;
+       color:white;
+      text-transform: none; 
+    }
+.glr_cvr{
+    width:100%;
+    float:left;
+}
+}

@@ -1,0 +1,26 @@
+<ion-header >
+
+  <ion-navbar >
+  
+<div class="toolbar-background"></div>
+    <ion-title><h6>Payment Plan</h6></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="plans">
+
+<ion-list (click)="pymntmthd(plans._id,plans.price,this.epi,this.mov,this.movname,this.epiname,plans.title)"*ngFor="let plans of planz">
+  <ion-item>
+    <ion-avatar item-start>
+      <img src="{{plans.planimage}}"/>
+    </ion-avatar>
+
+    <h2> {{plans.title}}</h2>
+<h3>${{plans.price}}</h3>
+    <p>Access for {{plans.days}} days</p>
+  </ion-item>
+</ion-list>
+
+</ion-content>

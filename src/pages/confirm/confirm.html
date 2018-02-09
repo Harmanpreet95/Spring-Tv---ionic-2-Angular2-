@@ -1,0 +1,36 @@
+     <ion-header>
+
+  <ion-toolbar color="blue">
+       <button  class="backbtn" (click)="backtomain()" float-left>
+            <ion-icon class="customIcon" name="arrow-back"></ion-icon>
+        </button> 
+  <ion-title>Confirm</ion-title>  
+          
+     </ion-toolbar>   
+</ion-header>
+
+
+ <ion-content class="methods">
+<ion-list >
+  <ion-item class="item-cnfrm" color="blue"> 
+ 
+       <h2>YOUR PLAN:{{this.cnfrmdata.title}}</h2>    
+<!-- <button (click)="movetoplan()">Change</button>    -->
+  </ion-item>
+
+  <ion-item class="item-cnfrm" color="blue">
+    <ion-avatar item-start>  
+         <img src="{{this.cnfrmdata.planimage}}"/>   
+     </ion-avatar> 
+
+       <h6>{{this.cnfrmdata.days}} days</h6>
+    <p>Access for {{this.cnfrmdata.days}} days</p>    
+   </ion-item>
+
+  <ion-item class="item-cnfrm" color="blue">
+<h2>YOUR METHOD:{{this.methodata.paymentmethod}}</h2>
+<!--  <button (click)="movetoplan()">Change</button>-->
+  </ion-item>
+</ion-list>
+
+ </ion-content>   

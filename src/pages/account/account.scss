@@ -1,0 +1,102 @@
+page-account {
+  .ion-pg{
+        .back-button{color:#fff;
+        }
+
+.toolbar-background{
+  background-color:#251d6d;}
+   h5{color:#fff;
+            font-size: 18px;
+font-weight: 500;
+text-align: left;
+margin-left: 22px;}
+
+  }
+	
+	ion-list{ margin: -15px;
+}
+
+          
+
+
+img{border-radius: 50%;
+    overflow: hidden;
+    width: 42px;
+    height: 41px;
+   }
+    h2{    margin: 2px 0;
+    font-size: 15px;
+    font-weight: 500;
+    display: inline-block;
+  }
+  
+    p{ 
+     overflow: inherit;
+    font-size: 13px;
+    line-height: normal;
+    text-overflow: inherit;
+    color: #fff !important;
+    margin-top: -3px;
+  }
+
+    .btn h4{
+      
+      font-weight:500;
+    font-size: 18px;
+    margin:4px 0 0 0;
+    text-transform: uppercase;
+  }
+
+   .btn {
+     border-radius: 4px;
+     margin-top: 34px;
+     height: 41px;
+    color: #fff;
+    background-color: #251d6d;
+    text-transform: none;
+    width: 96%;
+    margin-left: 6px;
+   }
+
+ .backbtn.mves_bck {
+    width: auto;
+    background: transparent;
+    color: #fff;
+    font-size: 19px;
+    float: left;
+}
+
+.back-button.bar-button {
+    display: none;
+}
+
+h6 {
+    color: #fff;
+    margin-top: 9px;
+    margin-bottom: 0;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-left: 3px;
+}
+
+.home-bg{
+    background: url("../assets/img/banner3-bg.jpg") ;
+        background-size: cover;
+}
+
+ion-list{
+  background-color: transparent;
+}
+
+.item-md {
+    padding-left: 16px;
+    padding-right: 0;
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: normal;
+    text-transform: none;
+    color:#fff;
+    background-color: transparent;
+}
+
+}

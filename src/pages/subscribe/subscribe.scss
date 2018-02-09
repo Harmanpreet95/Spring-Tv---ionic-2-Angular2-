@@ -1,0 +1,43 @@
+page-subscribe {
+.subscribe-bg{
+	background: url("../assets/img/banner3-bg.jpg") ;
+	    background-size: cover;
+}
+h1{
+	 
+       text-align: center;
+    font-size: 27px;
+    font-weight: 300;
+    color: #fff;
+    padding-top: 127px;
+}
+
+.grid{
+    margin-top: 139px;
+}
+
+.btnwhyt{   
+     font-size: 19px;
+    font-weight: 400;
+	border-bottom: 1px solid #e81344;
+	    padding: 22px;
+border-radius: 5px;
+margin-bottom: -10px;
+text-transform: none;
+}
+.btnblu{
+    border-radius: 5px;
+    font-weight: 900;
+    font-size: 14px;
+    padding: 22px;
+    text-transform: none;
+}
+
+h1::before, h1::after {
+    display: inline-block;
+    content: "";
+    border-top: 1px solid #5d5d5d;
+    width: 52px;
+    margin: 4px 0px;
+}
+}

@@ -1,0 +1,118 @@
+page-signin {
+.home-bg{
+	background: url("../assets/img/banner2-bg.jpg") ;
+	    background-size: cover;
+}
+img{
+   
+    max-width: 80%;
+    border: 0;
+    margin: 3px 0 0 31px;;
+}
+h2{ color:#fff;
+	font-weight: 400;
+	text-align: center;
+	    padding-top: 6px;
+    font-size: 27px;
+    margin: 0;
+
+}
+p{font-weight: 300;
+    color: #fff;
+    text-align: center;
+    padding: 0px 39px;
+    font-size: 15px; 
+margin:0;
+padding-bottom: 16px;}
+
+.col{padding: 0 5px;}
+
+.btnwhyt{
+	opacity:.3;
+	margin: 0;
+    }
+ion-label {
+    margin: 6px 8px 11px 0;}
+    
+    .text-input {
+    margin: 10px 4px 8px 11px 0;
+    padding: 0;}
+.btnblu{
+	height: 45px;
+    font-size: 21px;
+    font-weight: 300;
+    border-radius: 5px; 
+    text-transform: none !important;
+}
+.item{
+	    border-radius: 5px;
+}
+h4{line-height: 0;
+    font-size: 15px;
+    color: #c5c4c4;
+    display: inline-block;
+        font-weight: 200;
+        text-decoration: none;}
+
+    h5{margin-top: 7px;
+
+    font-size: 15px;
+    color:#c5c4c4;
+    float:right;
+        font-weight: 200;}
+       ion-label .fixed {
+    
+    flex: 0 0 10px;}
+
+.icon{   border-right: 1px solid #8c7d7d;
+    padding-right: 14px;}
+
+
+h6{ font-size: 14px;
+	text-align:center;
+    color:#c5c4c4;
+
+font-weight:100;
+    margin-top: 10px;}
+
+.tags{  margin:0;
+	padding:0;
+	display:inline-block;
+	list-style-type:none;
+	margin-left: 94px;
+	
+}
+.tags li{display:inline-block; margin: 0; padding: 0;
+}
+.tags li img{margin:0; padding:1px;
+width: 38px;}
+
+.or{margin: 13px 0 0 52px;}
+
+h1 {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 100;
+}
+h1::before,
+h1::after {
+    display: inline-block;
+    content: "";
+    border-top: 1px solid #5d5d5d;
+    width: 84px;
+    margin:4px 2px;  
+}
+// -------11/15/2017----------
+
+// #lbl-0 {
+//     color: #393185;
+// }
+
+// #lbl-1{
+//     color: #393185;
+// }
+
+.item-input .label-md{
+    color: #393185;
+}
+}

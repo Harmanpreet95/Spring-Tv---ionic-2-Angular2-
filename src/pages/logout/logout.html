@@ -1,0 +1,97 @@
+
+<!-- <ion-toolbar color="blue">
+ 
+        <button  class="backbtn" (click)="account()" float-left>
+            <ion-icon class="customIcon" name="arrow-back"></ion-icon>
+        </button>
+   <ion-title ><h5>Your account</h5></ion-title> 
+   </ion-toolbar>    </ion-header>             -->
+
+
+<ion-header class="ion-pg" >
+
+  <ion-navbar class="toolbar">
+<div class="toolbar-background"></div> 
+  <button  class="backbtn" (click)="account()" float-left>
+            <ion-icon class="customIcon" name="arrow-back"></ion-icon>
+        </button>
+   <ion-title ><h5> Edit Account</h5></ion-title>
+  
+  </ion-navbar>
+
+</ion-header>
+
+
+
+<ion-content padding class="home-bg">
+  <form #detailForm="ngForm"  (ngSubmit)="savedetails(detailForm)">
+<h2>Edit Profile</h2>
+
+<div class="changewrapper"> 
+<div class="change-log">
+ 
+<img *ngIf="this.prfimage == '' || this.prfimage == undefined"  class="log" src="assets/img/no-user-image.gif"/>
+<img *ngIf="this.prfimage != ''" class="log" [src]="this.prfimage"/>
+</div>
+ <div class="camera-icon"><ion-icon  (click)="openActionSheet();" name="camera"></ion-icon></div>
+
+ 
+</div>
+ 
+ <ion-grid>
+  <ion-row>
+    <ion-col col-12>
+<ion-list>
+
+  <ion-item class="btnwhyt">
+    <ion-input type="text" placeholder="Name"  pattern="[a-zA-Z ]+" [(ngModel)]="username" name="name" id="name" #name="ngModel"></ion-input>
+
+  </ion-item>
+  </ion-list>
+  </ion-col>
+  </ion-row>
+<ion-row>
+<ion-col col-12>
+<ion-list>
+  <ion-item class="btnwhyt">
+    <ion-input type="tel" [(ngModel)]="userphone" name="phone" placeholder="Mobile Number"  #phone='ngModel' pattern='[0-9]+' maxlength="15"></ion-input>
+  </ion-item>
+
+</ion-list>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+<ion-col col-12>
+<ion-list>
+  <ion-item class="btnwhyt">
+   <ion-input type="email" [(ngModel)]="useremail" name="email" placeholder="Email Address"   #email='ngModel' required pattern='^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$' readonly="true"></ion-input>
+  </ion-item>
+
+</ion-list>
+    </ion-col>
+  </ion-row>
+  </ion-grid>
+ </form>
+<ion-grid class="grid2">
+ <ion-row>
+  <ion-col col-12>
+<div class="btnblu">  
+     <button ion-button full color="blue" type="submit" class="ion-bt"  (click)="savedetails(detailForm)">SAVE</button>
+
+ </div>
+
+  
+
+ </ion-col>
+</ion-row>
+
+ <ion-row *ngIf="this.fb_user ==null">
+  <ion-col col-12>
+ <button ion-button full color="blue" class="ion-bt" (click)="changepassword()" >Change password</button>
+</ion-col>
+</ion-row>
+ 
+</ion-grid>
+</ion-content>
+
+

@@ -1,0 +1,115 @@
+ <ion-header no-border class="header">
+  <ion-toolbar  class="logo">
+  <ion-grid>
+  <ion-row>
+  <ion-col col-2 no-padding>
+  <button  class="backbtn" (click)="backtobilngadd()">
+            <ion-icon class="customIcon" name="arrow-back"></ion-icon>
+        </button>
+      </ion-col>
+  <ion-col col-10 no-padding>    
+ <ion-title ><h5>Shipping Address</h5></ion-title>
+</ion-col>
+</ion-row>
+</ion-grid>
+</ion-toolbar>
+</ion-header>
+
+<ion-content >
+<ion-grid class="editprf-list">
+ <ion-row>
+    <ion-col col-12 no-padding>
+<ion-list>
+
+  <ion-item class="btnwhyt" no-padding>
+    <!--<ion-label class="fixed" >  <ion-icon name="person" ></ion-icon></ion-label>-->
+    <ion-input type="text" value="" placeholder="Name"></ion-input>
+  </ion-item>
+  </ion-list>
+  </ion-col>
+  </ion-row>
+ <ion-row>
+<ion-col col-12  no-padding>
+<ion-list>
+  <ion-item class="btnwhyt" no-padding>
+    <!--<ion-label class="fixed">  <ion-icon name="call" class="icon"></ion-icon></ion-label>-->
+    <ion-input type="tel" value="" placeholder="Phone no."></ion-input>
+  </ion-item>
+
+</ion-list>
+    </ion-col>
+  </ion-row>
+
+   <ion-row>
+<ion-col col-12  no-padding>
+<ion-list>
+  <ion-item class="btnwhyt" no-padding>
+    <!--<ion-label class="fixed">  <ion-icon name="call" class="icon"></ion-icon></ion-label>-->
+    <ion-input type="tel" value="" placeholder=" Phone no.(alternative)"></ion-input>
+  </ion-item>
+
+</ion-list>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+<ion-col col-12  no-padding>
+<ion-list>
+  <ion-item class="btnwhyt" no-padding>
+    <!--<ion-label class="fixed">   <ion-icon class="icon" name="flag"></ion-icon></ion-label>-->
+    <ion-input type="text" value="" placeholder="Address"></ion-input>
+  </ion-item>
+
+</ion-list>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+<ion-col col-12  no-padding>
+<ion-list>
+  <ion-item class="btnwhyt" no-padding>
+    <!--<ion-label class="fixed">   <ion-icon class="icon" name="flag"></ion-icon></ion-label>-->
+    <ion-input type="text" value="" placeholder="Address(alternative)"></ion-input>
+  </ion-item>
+
+</ion-list>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+<ion-col col-12  no-padding>
+<ion-list>
+  <ion-item class="btnwhyt" no-padding>
+    <!--<ion-label class="fixed">   <ion-icon class="icon" name="flag"></ion-icon></ion-label>-->
+    <ion-input type="text" value="" placeholder="city"></ion-input>
+  </ion-item>
+
+</ion-list>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+<ion-col col-12  no-padding>
+<ion-list>
+  <ion-item class="btnwhyt" no-padding>
+    <ion-input type="text" value="" placeholder="country"></ion-input>
+  </ion-item>
+
+</ion-list>
+    </ion-col>
+  </ion-row>
+ <ion-row>
+<ion-col col-12  no-padding>
+<ion-list>
+  <ion-item class="btnwhyt" no-padding>
+    <!--<ion-label class="fixed">  <ion-icon name="call" class="icon"></ion-icon></ion-label>-->
+    <ion-input type="num" value="" placeholder="Zip/Postal Code"></ion-input>
+  </ion-item>
+
+</ion-list>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+<ion-col col-12 no-padding>
+ <button (click)="payment()" ion-button full class="btnpink"><h3>Payment</h3></button>
+ </ion-col>
+ </ion-row>
+  </ion-grid>
+</ion-content>
